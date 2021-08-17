@@ -165,7 +165,7 @@ $tertiary: #99e2d0;
     font-size: 1.1rem;
     font-weight: bold;
     background-color: rgb(226, 220, 225);
-    box-shadow: 2px 2px 10px rgb(86, 86, 88);
+    box-shadow: inset 0px 5px 8px  rgb(173, 173, 187);
 
     &--text {
       display: flex;
@@ -403,6 +403,27 @@ img {
         color: blue;
       }
     }
+
+    .heart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      /*.far.fa-heart {
+        position: absolute;
+        
+}
+        .fas.fa-heart {
+          position: relative;
+          font-size: 1.3rem;
+          color: blue;
+          display: none;
+
+          &:hover {
+            visibility: visible;
+          }
+        }    
+    }*/
     /* .fas.fa-heart {
 margin-top: 2px;
         font-size: 1.3rem;
@@ -411,8 +432,8 @@ margin-top: 2px;
         &:hover {
           visibility: visible;
           color: blue;
-        }
-      }*/
+        }*/
+      }
     &--name h3 {
       font-weight: bold;
       margin-bottom: 8px;
