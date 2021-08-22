@@ -31,7 +31,7 @@ $backgroundCard: #f6f6f6;
 
 /*LOADER*/
 
-/*.fond {
+.fond {
   width: 100%;
  height: 100vh;
   background-image: radial-gradient(
@@ -67,7 +67,7 @@ $backgroundCard: #f6f6f6;
   left: 0%;
   top: 0%;
   animation: rotate-one 1.5s linear infinite;
-  border-bottom: 3px solid #9356dc;
+  border-bottom: 5px solid #9356dc;
  
 }
 
@@ -75,7 +75,7 @@ $backgroundCard: #f6f6f6;
   right: 0%;
   top: 0%;
   animation: rotate-two 1.5s linear infinite;
-  border-right: 3px solid #ff79da;
+  border-right: 5px solid #ff79da;
   
 }
 
@@ -83,7 +83,7 @@ $backgroundCard: #f6f6f6;
   right: 0%;
   bottom: 0%;
   animation: rotate-three 1.5s linear infinite;
-  border-top: 3px solid #99e2d0;
+  border-top: 5px solid #99e2d0;
  
 }
 
@@ -126,30 +126,37 @@ $backgroundCard: #f6f6f6;
   font-size: 1.5rem;
   margin-top: 10px;
 }
+.pLoader {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: $tertiary;
+}
 .fa-utensils {
   margin-top: 10px;
 }
 .closingLoader {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  animation: fader 3s forwards;
-  z-index: 1;
+  animation: fader 5s forwards;
+  z-index: 5;
 }
 
 @keyframes fader {
-  95% {
+  98% {
     opacity: 1;
     height: 100%;
+    z-index: 5;
   }
   100% {
     opacity: 0;
     height: 0;
+    z-index: -5;
   }
 }
-*/
+
 /*PAGE*/
 .header {
   display: flex;
@@ -161,7 +168,7 @@ $backgroundCard: #f6f6f6;
 
   &--logo {
     width: 45%;
-    height: 50px;
+    height: 60px;
     margin: 0 auto;
   }
   &__location {
@@ -184,7 +191,8 @@ $backgroundCard: #f6f6f6;
       height: 50px;
       margin-right: 30px;
 
-      &--text, i {
+      &--text,
+      i {
         color: #353535;
       }
     }
@@ -340,16 +348,17 @@ img {
 .restaurants {
   background-color: $backgroundCard;
   width: 100%;
-  height: auto;
+  height: 1200px;
 
   &--title {
     display: flex;
     align-items: flex-end;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     width: 90%;
-    height: 70px;
+    height: 60px;
     margin-left: 5%;
+    margin-bottom: 3%;
   }
 }
 
@@ -359,7 +368,7 @@ img {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 1200px;
+  height: 1080px;
 
   // changer le placement card à 1030 en 2x2
   &--card,
@@ -414,30 +423,47 @@ img {
       margin-top: 15px;
       color: #000;
     }
-    .far.fa-heart {
-      margin-top: 2px;
-      font-size: 1.3rem;
-      color: rgb(134, 120, 120);
-      width: 25px;
-      height: 22px;
-      text-align: center;
-      line-height: 22px;
-      cursor: pointer;
-
-      &:hover {
-        /*display: none;*/
-        color: blue;
-      }
-    }
-
     .heartLike {
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 40px;
+      height: 40px;
+    }
+    .far.fa-heart {
+      position: relative;
+      font-size: 1.5rem;
+      margin-top: 2px;
+      color: rgb(134, 120, 120);
     }
     .fas.fa-heart {
       position: absolute;
-      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      font-size: 1.3rem;
+      width: 30px;
+      height: 30px;
+      margin-top: 1px;
+      color: $primary;
+    }
+
+    .fas.fa-heart:hover {
+      animation: fadein 0.8s forwards;
+      opacity: 0;
+    }
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+        font-size: 0;
+        transform: translateY(50%);
+      }
+      100% {
+        opacity: 1;
+        font-size: 1.3rem;
+        transform: translate(0);
+      }
     }
 
     /*.far.fa-heart {
@@ -466,6 +492,7 @@ margin-top: 2px;
         }*/
 
     &--name h3 {
+      font-size: 1.1rem;
       font-weight: bold;
       margin-bottom: 8px;
     }
