@@ -28,7 +28,7 @@ a {
 
 .loaderBlock {
   position: absolute;
-  top: 22%;
+  top: 18%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +174,7 @@ a {
 
 .pLoader {
   margin-top: 20px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #99e2d0;
 }
 
@@ -321,19 +321,21 @@ a {
   background: linear-gradient(360deg, #9356dc 60%, #ff79da 100%);
   border: none;
   margin-bottom: 20px;
-  -webkit-box-shadow: 2px 4px 10px #a6a6dd;
-          box-shadow: 2px 4px 10px #a6a6dd;
+  -webkit-box-shadow: 1px 1px 6px #a6a6dd;
+          box-shadow: 1px 1px 6px #a6a6dd;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .header__exploration--btn:hover {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-  -webkit-transition: 0.6s ease-in-out;
-  transition: 0.6s ease-in-out;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   opacity: 0.9;
-  -webkit-box-shadow: 1px 1px 6px #a6a6dd;
-          box-shadow: 1px 1px 6px #a6a6dd;
+  -webkit-box-shadow: 2px 4px 10px #a6a6dd;
+          box-shadow: 2px 4px 10px #a6a6dd;
 }
 
 .fonctionnement {
@@ -476,7 +478,6 @@ a {
 
 .label .fa-mobile-alt {
   color: #3f7072;
-  /*margin-left: 4px;*/
   font-size: 1.4rem;
 }
 
@@ -539,38 +540,16 @@ img {
   -webkit-box-shadow: 1px 1px 5px #d3d1eb;
           box-shadow: 1px 1px 5px #d3d1eb;
   cursor: pointer;
-  /*.far.fa-heart {
-        position: absolute;
-        
-}
-        .fas.fa-heart {
-          position: relative;
-          font-size: 1.3rem;
-          color: blue;
-          display: none;
-
-          &:hover {
-            visibility: visible;
-          }
-        }    
-    }*/
-  /* .fas.fa-heart {
-margin-top: 2px;
-        font-size: 1.3rem;
-        visibility: hidden;
-
-        &:hover {
-          visibility: visible;
-          color: blue;
-        }*/
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .restaurants__cards--card:hover,
 .restaurants__cards a:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
   -webkit-box-shadow: 1px 2px 15px #9cd1e7;
           box-shadow: 1px 2px 15px #9cd1e7;
 }
@@ -638,8 +617,12 @@ margin-top: 2px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40px;
-  height: 40px;
+  margin-top: 2px;
+  border: none;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
 .restaurants__cards--card .far.fa-heart,
@@ -666,8 +649,7 @@ margin-top: 2px;
   font-size: 1.3rem;
   width: 30px;
   height: 30px;
-  margin-top: 1px;
-  color: #9356dc;
+  margin-top: 2px;
 }
 
 .restaurants__cards--card .fas.fa-heart:hover,
@@ -689,6 +671,7 @@ margin-top: 2px;
     font-size: 1.3rem;
     -webkit-transform: translate(0);
             transform: translate(0);
+    color: #9356dc;
   }
 }
 
@@ -704,6 +687,7 @@ margin-top: 2px;
     font-size: 1.3rem;
     -webkit-transform: translate(0);
             transform: translate(0);
+    color: #9356dc;
   }
 }
 
@@ -716,7 +700,7 @@ margin-top: 2px;
 
 .footer {
   width: 100%;
-  height: 180px;
+  height: 200px;
   background-color: #353535;
 }
 
@@ -735,7 +719,8 @@ margin-top: 2px;
   width: 29%;
   min-width: 100px;
   max-width: 200px;
-  height: 50px;
+  margin-top: 10px;
+  height: 40px;
   fill: #fff;
 }
 
@@ -750,7 +735,7 @@ margin-top: 2px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  height: 100px;
+  height: 120px;
 }
 
 .footer__block .fa-utensils,
