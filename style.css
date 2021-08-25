@@ -4,6 +4,10 @@
 body {
   width: 100%;
   height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 h1,
@@ -17,206 +21,6 @@ a {
 a {
   text-decoration: none;
   color: white;
-}
-
-/*LOADER*/
-.fond {
-  width: 100%;
-  height: 100vh;
-  background-image: radial-gradient(circle farthest-corner at center, #353535 60%, #f6f6f6 40%);
-}
-
-.loaderBlock {
-  position: absolute;
-  top: 18%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 104px;
-  height: 104px;
-  border-radius: 50%;
-  -webkit-perspective: 800px;
-          perspective: 800px;
-}
-
-.inner {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-
-.inner.one {
-  left: 0%;
-  top: 0%;
-  -webkit-animation: rotate-one 1.5s linear infinite;
-          animation: rotate-one 1.5s linear infinite;
-  border-bottom: 5px solid #9356dc;
-}
-
-.inner.two {
-  right: 0%;
-  top: 0%;
-  -webkit-animation: rotate-two 1.5s linear infinite;
-          animation: rotate-two 1.5s linear infinite;
-  border-right: 5px solid #ff79da;
-}
-
-.inner.three {
-  right: 0%;
-  bottom: 0%;
-  -webkit-animation: rotate-three 1.5s linear infinite;
-          animation: rotate-three 1.5s linear infinite;
-  border-top: 5px solid #99e2d0;
-}
-
-@-webkit-keyframes rotate-one {
-  0% {
-    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-            transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-            transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotate-one {
-  0% {
-    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-            transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-            transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-  }
-}
-
-@-webkit-keyframes rotate-two {
-  0% {
-    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-            transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-            transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotate-two {
-  0% {
-    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-            transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-            transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-  }
-}
-
-@-webkit-keyframes rotate-three {
-  0% {
-    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-            transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-            transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotate-three {
-  0% {
-    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-            transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-            transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-  }
-}
-
-.logoStore {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.logoP {
-  color: white;
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.pLoader {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #99e2d0;
-}
-
-.fa-utensils {
-  margin-top: 10px;
-}
-
-.closingLoader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  -webkit-animation: fader 5s forwards;
-          animation: fader 5s forwards;
-  z-index: 5;
-}
-
-@-webkit-keyframes fader {
-  98% {
-    opacity: 1;
-    height: 100%;
-    z-index: 5;
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-    z-index: -5;
-  }
-}
-
-@keyframes fader {
-  98% {
-    opacity: 1;
-    height: 100%;
-    z-index: 5;
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-    z-index: -5;
-  }
 }
 
 /*PAGE*/
@@ -254,7 +58,7 @@ a {
   background: linear-gradient(360deg, #dedcf2 80%, rgba(210, 210, 218, 0.8) 85%, rgba(61, 185, 207, 0.8) 100%);
 }
 
-.header__location--text {
+.header__location--place {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,8 +72,7 @@ a {
   margin-right: 30px;
 }
 
-.header__location--text--text,
-.header__location--text i {
+.header__location--place--marker {
   color: #353535;
 }
 
@@ -277,7 +80,7 @@ a {
   margin-left: 15px;
 }
 
-.header__exploration {
+.header__explore {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,7 +99,7 @@ a {
   height: 300px;
 }
 
-.header__exploration h1 {
+.header__explore h1 {
   font-size: 1.5rem;
   font-weight: 900;
   width: 70%;
@@ -304,21 +107,20 @@ a {
   margin-top: 20px;
 }
 
-.header__exploration p {
+.header__explore p {
   font-size: 1.1rem;
   text-align: center;
   width: 100%;
   color: #797578;
 }
 
-.header__exploration--btn {
+.header__explore--btn {
   height: 50px;
   width: 220px;
   border-radius: 25px;
   color: #fff;
   font-size: 1rem;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #9356dc), to(#ff79da));
-  background: linear-gradient(360deg, #9356dc 60%, #ff79da 100%);
+  background: linear-gradient(27deg, #9356dc 0%, #ff79da 100%);
   border: none;
   margin-bottom: 20px;
   -webkit-box-shadow: 1px 1px 6px #a6a6dd;
@@ -330,7 +132,7 @@ a {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.header__exploration--btn:hover {
+.header__explore--btn:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   opacity: 0.9;
@@ -392,14 +194,14 @@ a {
   height: 20%;
   background-color: #f6f6f6;
   border-radius: 20px;
-  -webkit-box-shadow: 1px 2px 11px #9cd1e7;
-          box-shadow: 1px 2px 11px #9cd1e7;
+  -webkit-box-shadow: 1px 3px 18px #aadcf1;
+          box-shadow: 1px 3px 18px #aadcf1;
 }
 
 .fonctionnement__explications--card:hover {
   background-color: #f5edff;
-  -webkit-box-shadow: 1px 2px 11px #9cd1e7;
-          box-shadow: 1px 2px 11px #9cd1e7;
+  -webkit-box-shadow: 1px 3px 18px #9cd1e7;
+          box-shadow: 1px 3px 18px #9cd1e7;
 }
 
 .fonctionnement__explications--card:hover .fas {
@@ -469,14 +271,14 @@ a {
   margin-top: 2px;
 }
 
-.label .fa-store {
+.label--icoStore {
   color: #3f7072;
   font-size: 1.3rem;
   margin-top: 2px;
   margin-left: -10px;
 }
 
-.label .fa-mobile-alt {
+.label--icoMobile {
   color: #3f7072;
   font-size: 1.4rem;
 }
@@ -537,8 +339,8 @@ img {
   height: 250px;
   background-color: white;
   border-radius: 20px;
-  -webkit-box-shadow: 1px 1px 5px #d3d1eb;
-          box-shadow: 1px 1px 5px #d3d1eb;
+  -webkit-box-shadow: 1px 2px 20px #d3d1eb;
+          box-shadow: 1px 2px 20px #d3d1eb;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -550,8 +352,8 @@ img {
 .restaurants__cards a:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
-  -webkit-box-shadow: 1px 2px 15px #9cd1e7;
-          box-shadow: 1px 2px 15px #9cd1e7;
+  -webkit-box-shadow: 1px 5px 15px #9cd1e7;
+          box-shadow: 1px 5px 15px #9cd1e7;
 }
 
 .restaurants__cards--card--img,
@@ -647,9 +449,12 @@ img {
           justify-content: center;
   opacity: 0;
   font-size: 1.3rem;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 20px;
   margin-top: 2px;
+  background-image: linear-gradient(27deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .restaurants__cards--card .fas.fa-heart:hover,
@@ -671,7 +476,6 @@ img {
     font-size: 1.3rem;
     -webkit-transform: translate(0);
             transform: translate(0);
-    color: #9356dc;
   }
 }
 
@@ -687,7 +491,6 @@ img {
     font-size: 1.3rem;
     -webkit-transform: translate(0);
             transform: translate(0);
-    color: #9356dc;
   }
 }
 

@@ -4,6 +4,7 @@
 body {
   width: 100%;
   height: 100vh;
+  user-select: none;
 }
 h1,
 h2,
@@ -21,146 +22,11 @@ $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 
-$btnColor: linear-gradient(
-  360deg,
-  rgba(147, 86, 220, 1) 60%,
-  rgba(255, 121, 218, 1) 100%
-);
-
-$heartColor: linear-gradient(
-  360deg,
-  rgba(147, 86, 220, 1) 60%,
-  rgba(255, 121, 218, 1) 100%
-);
+$btnColor: linear-gradient(27deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+$heartColor: linear-gradient(27deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 $footer: #353535;
 $backgroundCard: #f6f6f6;
 
-/*LOADER*/
-.fond {
-  width: 100%;
- height: 100vh;
-  background-image: radial-gradient(
-    circle farthest-corner at center,
-    #353535 60%,
-    #f6f6f6 40%);
-}
-.loaderBlock {
-  position: absolute;
-  top: 18%;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.loader {
-  display: flex;
-  width: 104px;
-  height: 104px;
-  border-radius: 50%;
-  perspective: 800px;
-}
-
-.inner {
-  position: absolute;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  
-}
-
-.inner.one {
-  left: 0%;
-  top: 0%;
-  animation: rotate-one 1.5s linear infinite;
-  border-bottom: 5px solid #9356dc;
- 
-}
-
-.inner.two {
-  right: 0%;
-  top: 0%;
-  animation: rotate-two 1.5s linear infinite;
-  border-right: 5px solid #ff79da;
-  
-}
-
-.inner.three {
-  right: 0%;
-  bottom: 0%;
-  animation: rotate-three 1.5s linear infinite;
-  border-top: 5px solid #99e2d0;
- 
-}
-
-@keyframes rotate-one {
-  0% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotate-two {
-  0% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotate-three {
-  0% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-  }
-}
-.logoStore {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-.logoP {
-  color: white;
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-.pLoader {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: $tertiary;
-}
-.fa-utensils {
-  margin-top: 10px;
-}
-.closingLoader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  animation: fader 5s forwards;
-  z-index: 5;
-}
-
-@keyframes fader {
-  98% {
-    opacity: 1;
-    height: 100%;
-    z-index: 5;
-  }
-  100% {
-    opacity: 0;
-    height: 0;
-    z-index: -5;
-  }
-}
 
 /*PAGE*/
 .header {
@@ -189,15 +55,14 @@ $backgroundCard: #f6f6f6;
       rgba(61, 185, 207, 0.8) 100%
     );
 
-    &--text {
+    &--place {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 50px;
       margin-right: 30px;
 
-      &--text,
-      i {
+      &--marker {
         color: #353535;
       }
     }
@@ -207,7 +72,7 @@ $backgroundCard: #f6f6f6;
     }
   }
 }
-.header__exploration {
+.header__explore {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -282,11 +147,11 @@ $backgroundCard: #f6f6f6;
       height: 20%;
       background-color: $backgroundCard;
       border-radius: 20px;
-      box-shadow: 1px 2px 11px rgb(156, 209, 231);
+      box-shadow: 1px 3px 18px rgb(170, 220, 241);
     }
     &--card:hover {
       background-color: #f5edff;
-      box-shadow: 1px 2px 11px rgb(156, 209, 231);
+      box-shadow: 1px 3px 18px rgb(156, 209, 231);
 
       .fas {
         color: $primary;
@@ -333,17 +198,19 @@ $backgroundCard: #f6f6f6;
       margin-top: 2px;
     }
   }
-  .fa-store {
+  &--icoStore {
     color: rgb(63, 112, 114);
     font-size: 1.3rem;
     margin-top: 2px;
     margin-left: -10px;
   }
-  .fa-mobile-alt {
+  &--icoMobile {
     color: rgb(63, 112, 114);
     font-size: 1.4rem;
   }
 }
+
+
 img {
   width: 300px;
   height: auto;
@@ -383,13 +250,13 @@ img {
     height: 250px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px rgb(211, 209, 235);
+    box-shadow: 1px 2px 20px rgb(211, 209, 235);
     cursor: pointer;
     transition: transform 0.5s;
 
     &:hover {
       transform: scale(1.01);
-      box-shadow: 1px 2px 15px rgb(156, 209, 231);
+      box-shadow: 1px 5px 15px rgb(156, 209, 231);
     }
 
     &--img {
@@ -451,9 +318,12 @@ img {
       justify-content: center;
       opacity: 0;
       font-size: 1.3rem;
-      width: 30px;
-      height: 30px;
+      width: 22px;
+      height: 20px;
       margin-top: 2px;
+      background-image: $heartColor;
+      -webkit-background-clip: text;
+      color: transparent;    
     }
 
     .fas.fa-heart:hover {
@@ -470,7 +340,6 @@ img {
         opacity: 1;
         font-size: 1.3rem;
         transform: translate(0);
-        color: $primary;
       }
     }
 
