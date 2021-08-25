@@ -182,6 +182,18 @@ a {
   height: 350px;
 }
 
+@media (min-width: 900px) {
+  .fonctionnement__explications {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}
+
 .fonctionnement__explications--card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,6 +208,18 @@ a {
   border-radius: 20px;
   -webkit-box-shadow: 1px 3px 18px #aadcf1;
           box-shadow: 1px 3px 18px #aadcf1;
+}
+
+@media (min-width: 900px) {
+  .fonctionnement__explications--card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 30%;
+  }
 }
 
 .fonctionnement__explications--card:hover {
@@ -291,7 +315,8 @@ img {
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
-  height: 1200px;
+  height: auto;
+  /*1200px*/
 }
 
 .restaurants--title {
@@ -320,10 +345,24 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
   height: 1080px;
+}
+
+@media (min-width: 900px) {
+  .restaurants__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: 600px;
+  }
 }
 
 .restaurants__cards--card,
@@ -346,6 +385,13 @@ img {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+@media (min-width: 900px) {
+  .restaurants__cards--card,
+  .restaurants__cards a {
+    width: 45%;
+  }
 }
 
 .restaurants__cards--card:hover,
@@ -502,9 +548,15 @@ img {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 200px;
   background-color: #353535;
+  /*@media (min-width: 900px) {
+  justify-content: center;
+}*/
 }
 
 .footer__block {
@@ -516,6 +568,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 5%;
+  border: 1px solid;
 }
 
 .footer__block--logo {
@@ -525,6 +578,7 @@ img {
   margin-top: 10px;
   height: 40px;
   fill: #fff;
+  border: 2px solid blue;
 }
 
 .footer__block--links {
@@ -539,6 +593,15 @@ img {
       justify-content: space-around;
   width: 100%;
   height: 120px;
+}
+
+@media (min-width: 900px) {
+  .footer__block--links {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 2px solid yellow;
+  }
 }
 
 .footer__block .fa-utensils,
