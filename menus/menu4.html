@@ -15,16 +15,18 @@
 
   <body>
     <header class="header__menus">
-      <a href="../index.html"
-          class="header__menus--links"
-          title="retour à l'accueil">
-      <div class="header__menus--return">
-        <i class="fas fa-arrow-left header__menus--arrow"></i>                         
-      </div>
-    </a>
+      <a
+        href="../index.html"
+        class="header__menus--links"
+        title="retour à l'accueil"
+      >
+        <div class="header__menus--return">
+          <i class="fas fa-arrow-left header__menus--arrow"></i>
+        </div>
+      </a>
 
       <img
-        class="header--logo"
+        class="header__menus--logoUp"
         src="../images/logo/ohmyfood@2x.svg"
         alt="logo_ohmyfood"
       />
@@ -43,122 +45,158 @@
             <h2 class="menuCard__restaurant--title">Le délice des sens</h2>
             <button class="heartLike">
               <i class="far fa-heart heartLike--far-heart" title="J'aime!"></i>
-                <i class="fas fa-heart heartLike--fas-heart"></i>
+              <i class="fas fa-heart heartLike--fas-heart"></i>
             </button>
           </div>
+          <div class="containerMenus">
+            <div class="entrées">
+              <p class="category">ENTRÉES</p>
+              <hr />
+              <div class="menu">
+                <div class="labelMenu lM1">
+                  <div class="labelMenu__plate">
+                    <h3 class="labelMenu__plate--naming">Tartare au thon</h3>
+                    <p>Assaisonné au yuzu</p>
+                  </div>
+                  <p class="labelMenu__plate--price">25€</p>
+                  <div class="labelMenu__plate--checkInChoice">
+                    <i
+                      class="fas fa-check-circle fa-check"
+                      style="font-size: 0"
+                    ></i>
+                  </div>
+                </div>
 
-          <p class="category">ENTRÉES</p>
-          <hr />
-          <div class="menu">
-            <div class="labelMenu lM1">
-              <div class="labelMenu__plate">
-                <h3 class="labelMenu__plate--naming">Tartare au thon</h3>
-                <p>Assaisonné au yuzu</p>
-              </div>
-              <p class="labelMenu__plate--price">25€</p>
-              <div class="labelMenu__plate--checkInChoice">
-                <i class="fas fa-check-circle fa-check" style="font-size: 0;"></i>
+                <div class="labelMenu lM2">
+                  <div class="labelMenu__plate">
+                    <h3 class="labelMenu__plate--naming">
+                      Bouchée de homard croustillant
+                    </h3>
+                    <p>Et sa farandole de petits légumes</p>
+                  </div>
+                  <p class="labelMenu__plate--price">35€</p>
+                  <div class="labelMenu__plate--checkInChoice">
+                    <i
+                      class="fas fa-check-circle fa-check"
+                      style="font-size: 0"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="labelMenu lM3">
+                  <div class="labelMenu__plate">
+                    <h3 class="labelMenu__plate--naming">velouté de cèpes</h3>
+                    <p>Aux truffes</p>
+                  </div>
+                  <p class="labelMenu__plate--price">20€</p>
+                  <div class="labelMenu__plate--checkInChoice">
+                    <i
+                      class="fas fa-check-circle fa-check"
+                      style="font-size: 0"
+                    ></i>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="plats">
+              <p class="category">PLATS</p>
+              <hr />
+              <div class="menu">
+                <div class="labelMenu lM4">
+                  <div class="labelMenu__plate">
+                    <h3 class="labelMenu__plate--naming">
+                      Poulet rôti aux herbes de provence
+                    </h3>
+                    <p>Et sa crème de truffes</p>
+                  </div>
+                  <p class="labelMenu__plate--price">40€</p>
+                  <div class="labelMenu__plate--checkInChoice">
+                    <i
+                      class="fas fa-check-circle fa-check"
+                      style="font-size: 0"
+                    ></i>
+                  </div>
+                </div>
 
-            <div class="labelMenu lM2">
-              <div class="labelMenu__plate">
-                <h3 class="labelMenu__plate--naming">
-                  Bouchée de homard croustillant
-                </h3>
-                <p>Et sa farandole de petits légumes</p>
-              </div>
-              <p class="labelMenu__plate--price">35€</p>
-              <div class="labelMenu__plate--checkInChoice">
-                <i class="fas fa-check-circle fa-check" style="font-size: 0;"></i>
+                <div class="labelMenu lM5">
+                  <div class="labelMenu__plate">
+                    <h3 class="labelMenu__plate--naming">Langoustine rôti</h3>
+                    <p>Et ses légumes de saison</p>
+                  </div>
+                  <p class="labelMenu__plate--price">35€</p>
+                  <div class="labelMenu__plate--checkInChoice">
+                    <i
+                      class="fas fa-check-circle fa-check"
+                      style="font-size: 0"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="labelMenu lM6">
+                  <div class="labelMenu__plate">
+                    <h3 class="labelMenu__plate--naming">
+                      Cote de boeuf angus
+                    </h3>
+                    <p>Et sa purée de panais</p>
+                  </div>
+                  <p class="labelMenu__plate--price">44€</p>
+                  <div class="labelMenu__plate--checkInChoice">
+                    <i
+                      class="fas fa-check-circle fa-check"
+                      style="font-size: 0"
+                    ></i>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="desserts">
+              <p class="category">DESSERTS</p>
+              <hr />
+              <div class="menu">
+                <div class="labelMenu lM7">
+                  <div class="labelMenu__plate">
+                    <h3 class="labelMenu__plate--naming">
+                      Farandole de desserts
+                    </h3>
+                    <p>Du chef</p>
+                  </div>
+                  <p class="labelMenu__plate--price">18€</p>
+                  <div class="labelMenu__plate--checkInChoice">
+                    <i
+                      class="fas fa-check-circle fa-check"
+                      style="font-size: 0"
+                    ></i>
+                  </div>
+                </div>
 
-            <div class="labelMenu lM3">
-              <div class="labelMenu__plate">
-                <h3 class="labelMenu__plate--naming">velouté de cèpes</h3>
-                <p>Aux truffes</p>
-              </div>
-              <p class="labelMenu__plate--price">20€</p>
-              <div class="labelMenu__plate--checkInChoice">
-                <i class="fas fa-check-circle fa-check" style="font-size: 0;"></i>
-              </div>
-            </div>
-          </div>
+                <div class="labelMenu lM8">
+                  <div class="labelMenu__plate">
+                    <h3 class="labelMenu__plate--naming">Crème brulée</h3>
+                    <p>Revisitée</p>
+                  </div>
 
-          <p class="category">PLATS</p>
-          <hr />
-          <div class="menu">
-            <div class="labelMenu lM4">
-              <div class="labelMenu__plate">
-                <h3 class="labelMenu__plate--naming">
-                  Poulet rôti aux herbes de provence
-                </h3>
-                <p>Et sa crème de truffes</p>
-              </div>
-              <p class="labelMenu__plate--price">40€</p>
-              <div class="labelMenu__plate--checkInChoice">
-                <i class="fas fa-check-circle fa-check" style="font-size: 0;"></i>
-              </div>
-            </div>
+                  <p class="labelMenu__plate--price">22€</p>
+                  <div class="labelMenu__plate--checkInChoice">
+                    <i
+                      class="fas fa-check-circle fa-check"
+                      style="font-size: 0"
+                    ></i>
+                  </div>
+                </div>
 
-            <div class="labelMenu lM5">
-              <div class="labelMenu__plate">
-                <h3 class="labelMenu__plate--naming">Langoustine rôti</h3>
-                <p>Et ses légumes de saison</p>
-              </div>
-              <p class="labelMenu__plate--price">35€</p>
-              <div class="labelMenu__plate--checkInChoice">
-                <i class="fas fa-check-circle fa-check" style="font-size: 0;"></i>
-              </div>
-            </div>
-
-            <div class="labelMenu lM6">
-              <div class="labelMenu__plate">
-                <h3 class="labelMenu__plate--naming">Cote de boeuf angus</h3>
-                <p>Et sa purée de panais</p>
-              </div>
-              <p class="labelMenu__plate--price">44€</p>
-              <div class="labelMenu__plate--checkInChoice">
-                <i class="fas fa-check-circle fa-check" style="font-size: 0;"></i>
-              </div>
-            </div>
-          </div>
-
-          <p class="category">DESSERTS</p>
-          <hr />
-          <div class="menu">
-            <div class="labelMenu lM7">
-              <div class="labelMenu__plate">
-                <h3 class="labelMenu__plate--naming">Farandole de desserts</h3>
-                <p>Du chef</p>
-              </div>
-              <p class="labelMenu__plate--price">18€</p>
-              <div class="labelMenu__plate--checkInChoice">
-                <i class="fas fa-check-circle fa-check" style="font-size: 0;"></i>
-              </div>
-            </div>
-
-            <div class="labelMenu lM8">
-              <div class="labelMenu__plate">
-                <h3 class="labelMenu__plate--naming">Crème brulée</h3>
-                <p>Revisitée</p>
-              </div>
-
-              <p class="labelMenu__plate--price">22€</p>
-              <div class="labelMenu__plate--checkInChoice">
-                <i class="fas fa-check-circle fa-check" style="font-size: 0;"></i>
-              </div>
-            </div>
-
-            <div class="labelMenu lM9">
-              <div class="labelMenu__plate">
-                <h3 class="labelMenu__plate--naming">Tiramisu</h3>
-                <p>A la noisette</p>
-              </div>
-              <p class="labelMenu__plate--price">23€</p>
-              <div class="labelMenu__plate--checkInChoice">
-                <i class="fas fa-check-circle fa-check" style="font-size: 0;"></i>
+                <div class="labelMenu lM9">
+                  <div class="labelMenu__plate">
+                    <h3 class="labelMenu__plate--naming">Tiramisu</h3>
+                    <p>A la noisette</p>
+                  </div>
+                  <p class="labelMenu__plate--price">23€</p>
+                  <div class="labelMenu__plate--checkInChoice">
+                    <i
+                      class="fas fa-check-circle fa-check"
+                      style="font-size: 0"
+                    ></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -170,7 +208,7 @@
     <footer class="footer">
       <div class="footer__block">
         <img
-          class="footer__block--logo"
+          class="footer__block--logoDown"
           src="../images/logo/ohmyfood@2xblanc.svg"
           alt="logo footer"
         />

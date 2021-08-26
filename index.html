@@ -7,7 +7,7 @@
     <meta name="Description" content="" />
     <title>Accueil_Oh_My_Food</title>
     <link href="reset.css" rel="stylesheet" />
-    <!--<link href="loader.css" rel="stylesheet" />-->
+    <link href="loader.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
   </head>
@@ -17,12 +17,12 @@
     <div class="closingLoader">
       <div class="fond">
         <div class="loaderBlock">
-        <div class="loader">
-          <div class="inner one"></div>
-          <div class="inner two"></div>
-          <div class="inner three"></div>
+          <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+          </div>
         </div>
-      </div>
 
         <div class="logoStore">
           <img src="images/logo/ohmyfood@2xblanc.svg" alt="logo store" />
@@ -41,7 +41,7 @@
     <header>
       <div class="header">
         <img
-          class="header--logo"
+          class="header--logoUp"
           src="images/logo/ohmyfood@2x.svg"
           alt="logo_ohmyfood"
         />
@@ -49,10 +49,9 @@
         <div class="header__location">
           <div class="header__location--place">
             <i class="fas fa-map-marker-alt location--marker"></i>
-            <p class="header__location--city ">Paris, Belleville</p>
+            <p class="header__location--city">Paris, Belleville</p>
           </div>
-          </div>
-        
+        </div>
 
         <div class="header__explore">
           <h1>Réservez le menu qui vous convient</h1>
@@ -60,9 +59,7 @@
             Découvrez des restaurants d'exception, sélectionnés par nos soins.
           </p>
 
-          <button class="header__explore--btn">
-            Explorer nos restaurants
-          </button>
+          <button class="header__explore--btn">Explorer nos restaurants</button>
         </div>
       </div>
     </header>
@@ -74,7 +71,7 @@
         <div class="fonctionnement__explications">
           <div class="fonctionnement__explications--card choix">
             <div class="label choix">
-              <p class="label--number">1</p>
+              <i class="label--number">1</i>
               <i class="fas fa-mobile-alt label--icoMobile"></i>
               <p>Choisissez un restaurant</p>
             </div>
@@ -83,7 +80,7 @@
           <div class="fonctionnement__explications--card composer">
             <div class="label composer">
               <div class="label__menuIcone">
-                <p class="label--number">2</p>
+                <i class="label--number">2</i>
                 <div class="icoMenu">
                   <i class="fas fa-ellipsis-v icoMenu--ellipsis"
                     ><i class="fas fa-bars icoMenu--barre"></i>
@@ -96,7 +93,7 @@
 
           <div class="fonctionnement__explications--card dégustez">
             <div class="label déguster">
-              <p class="label--number">3</p>
+              <i class="label--number">3</i>
               <i class="fas fa-store label--icoStore"></i>
               <p>Dégustez au restaurant</p>
             </div>
@@ -192,22 +189,22 @@
     <footer class="footer">
       <div class="footer__block">
         <img
-          class="footer__block--logo"
+          class="footer__block--logoDown"
           src="images/logo/ohmyfood@2xblanc.svg"
           alt="logo footer"
         />
-        <div class="footer__block--links">
-          <div class="footer__block--suggest">
+        <ul class="footer__block--links">
+          <li class="footer__block--suggest">
             <i class="fas fa-utensils"></i>
             <a href="#">Proposer un restaurant</a>
-          </div>
-          <div class="footer__block--partnairs">
+          </li>
+          <li class="footer__block--partnairs">
             <i class="fas fa-hands-helping"></i>
             <a href="#">Devenir partenaire</a>
-          </div>
-          <a href="#">Mentions légales</a>
-          <a href="mailto:email@sample.com">Contact</a>
-        </div>
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:email@sample.com">Contact</a></li>
+        </ul>
       </div>
     </footer>
   </body>

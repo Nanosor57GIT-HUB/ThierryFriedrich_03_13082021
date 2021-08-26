@@ -22,11 +22,18 @@ $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 
-$btnColor: linear-gradient(27deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-$heartColor: linear-gradient(27deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+$btnColor: linear-gradient(
+  27deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
+$heartColor: linear-gradient(
+  27deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
 $footer: #353535;
 $backgroundCard: #f6f6f6;
-
 
 /*PAGE*/
 .header {
@@ -37,10 +44,16 @@ $backgroundCard: #f6f6f6;
   width: 100%;
   height: 400px;
 
-  &--logo {
-    width: 45%;
-    height: 60px;
+  &--logoUp {
+    width: 180px;
+    //width: 45%;
+    height: 15%; //60px
     margin: 0 auto;
+
+    @media (min-width: 900px) {
+      width: 20%;
+      height: 20%;
+    }
   }
   &__location {
     width: 100%;
@@ -122,6 +135,10 @@ $backgroundCard: #f6f6f6;
   height: 400px;
   margin: auto 3%;
 
+  @media (min-width: 900px) {
+    height: 200px;
+  }
+
   &__title {
     display: flex;
     align-items: flex-end;
@@ -129,7 +146,11 @@ $backgroundCard: #f6f6f6;
     font-weight: bold;
     width: 92%;
     height: 70px;
-    margin-left: 4%;
+    margin-left: 3%;
+
+    @media (min-width: 900px) {
+      margin-left: 1%;
+    }
   }
 
   &__explications {
@@ -139,11 +160,12 @@ $backgroundCard: #f6f6f6;
     width: 100%;
     height: 350px;
 
-        @media (min-width: 900px) {
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
+    @media (min-width: 900px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      height: 200px;
+    }
 
     &--card {
       display: flex;
@@ -154,13 +176,14 @@ $backgroundCard: #f6f6f6;
       background-color: $backgroundCard;
       border-radius: 20px;
       box-shadow: 1px 3px 18px rgb(170, 220, 241);
+      cursor: pointer;
 
-       @media (min-width: 900px) {
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 30%;
-}
-
+      @media (min-width: 900px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 30%;
+        height: 80px;
+      }
     }
     &--card:hover {
       background-color: #f5edff;
@@ -175,64 +198,75 @@ $backgroundCard: #f6f6f6;
 
 .label p {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
+  margin-left: 20px;
+
+  @media (min-width: 1120px) {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
 }
-.composer p {
-  margin-right: 15px;
+.choix p {
+  margin-left: 27px;
+
+  /* @media (min-width: 1120px) {
+    font-size: 1.3rem;
+  }*/
 }
-.déguster p {
-  margin-right: 10px;
-}
+
 .label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 260px;
+  width: 100%;
   margin-left: -14px;
-  
+
   &--number {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     background-color: $primary;
     border-radius: 25px;
     color: white;
+
+    @media (min-width: 900px) {
+      width: 27px;
+      height: 27px;
+    }
   }
+
   &__menuIcone {
     display: flex;
     align-items: center;
 
     .icoMenu {
       color: rgb(63, 112, 114);
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-top: 2px;
+      margin-left: 20px;
     }
   }
   &--icoStore {
     color: rgb(63, 112, 114);
-    font-size: 1.3rem;
-    margin-top: 2px;
-    margin-left: -10px;
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    margin-left: 20px;
   }
+
   &--icoMobile {
     color: rgb(63, 112, 114);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-left: 30px;
   }
-}
-
-
-img {
-  width: 300px;
-  height: auto;
 }
 
 .restaurants {
   background-color: $backgroundCard;
   width: 100%;
-  height: auto;/*1200px*/
+  height: auto; /*1200px*/
 
   &--title {
     display: flex;
@@ -243,8 +277,6 @@ img {
     height: 60px;
     margin-left: 5%;
     margin-bottom: 3%;
-
-    
   }
 }
 
@@ -257,13 +289,12 @@ img {
   height: 1080px;
 
   @media (min-width: 900px) {
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 600px;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px;
+  }
 
-  // changer le placement card à 1030 en 2x2
   &--card,
   a {
     display: flex;
@@ -276,9 +307,9 @@ img {
     cursor: pointer;
     transition: transform 0.5s;
 
-@media (min-width: 900px) {
-  width: 45%;
-}
+    @media (min-width: 900px) {
+      width: 45%;
+    }
     &:hover {
       transform: scale(1.01);
       box-shadow: 1px 5px 15px rgb(156, 209, 231);
@@ -289,7 +320,11 @@ img {
       height: 180px;
       border-radius: 20px 20px 0 0;
       object-fit: cover;
+      //object-position: center;
       object-position: 50% -40px;
+    }
+    .img2 {
+      object-position: 50% -170px;
     }
 
     .newRestaurant {
@@ -348,7 +383,7 @@ img {
       margin-top: 2px;
       background-image: $heartColor;
       -webkit-background-clip: text;
-      color: transparent;    
+      color: transparent;
     }
 
     .fas.fa-heart:hover {
@@ -379,27 +414,21 @@ img {
   display: flex;
   width: 100%;
   height: 200px;
-  background-color: $footer;   
-  
-  /*@media (min-width: 900px) {
-  justify-content: center;
-}*/
+  background-color: $footer;
 
   &__block {
     display: flex;
     flex-direction: column;
     margin-left: 5%;
-    border: 1px solid;
+    width: 90%;
 
-    &--logo {
+    &--logoDown {
       width: 29%;
       min-width: 100px;
       max-width: 200px;
       margin-top: 10px;
       height: 40px;
       fill: #fff;
-      border: 2px solid blue;
-
     }
     &--links {
       display: flex;
@@ -408,10 +437,15 @@ img {
       width: 100%;
       height: 120px;
 
-       @media (min-width: 900px) {
-  align-items: center;
-  border: 2px solid yellow;
-}
+      @media (min-width: 900px) {
+        align-items: center;
+
+        @media (min-width: 1200px) {
+          flex-direction: row;
+          width: 70%;
+          margin-left: 25%;
+        }
+      }
     }
     .fa-utensils,
     .fa-hands-helping {

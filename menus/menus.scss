@@ -25,17 +25,25 @@ $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 
-$btnColor: linear-gradient(27deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+$btnColor: linear-gradient(
+  27deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
 
-$heartColor: linear-gradient(27deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-
+$heartColor: linear-gradient(
+  27deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
 
 $backgroundCard: #f6f6f6;
 
 .header__menus {
-  height: 8%;
+  height: 9%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   &--return {
     display: flex;
@@ -45,11 +53,16 @@ $backgroundCard: #f6f6f6;
     font-size: 1.4rem;
     color: rgb(109, 101, 101);
   }
-}
-.header--logo {
-  margin-right: 27%;
-}
 
+  &--logoUp {
+    width: 180px;
+    margin: 0 auto;
+
+    @media (min-width: 900px) {
+      width: 20%;
+    }
+  }
+}
 .restaurant--img {
   position: absolute;
   width: 100%;
@@ -76,8 +89,18 @@ $backgroundCard: #f6f6f6;
     width: 100%;
     height: 100px;
 
+    @media (min-width: 800px) {
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
     &--title {
       font-size: 1.8rem;
+
+      @media (min-width: 800px) {
+        font-size: 2.3rem;
+      }
     }
     .heartLike {
       display: flex;
@@ -106,8 +129,8 @@ $backgroundCard: #f6f6f6;
         width: 22px;
         height: 20px;
         background-image: $heartColor;
-      -webkit-background-clip: text;
-      color: transparent;   
+        -webkit-background-clip: text;
+        //color: transparent;
       }
     }
 
@@ -127,6 +150,16 @@ $backgroundCard: #f6f6f6;
         transform: translateY(0);
       }
     }
+  }
+}
+
+@media (min-width: 1140px) {
+  .containerMenus {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80%;
+    margin: 40px auto;
   }
 }
 
@@ -152,12 +185,31 @@ hr {
   justify-content: space-around;
   align-items: center;
 
+  @media (min-width: 800px) {
+    width: 80%;
+    margin-left: 10%;
+  }
+  @media (min-width: 1140px) {
+    width: 370px;
+    margin-left: 0;
+  }
+
   &--menu2Entrées {
+    width: 100%;
     height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    @media (min-width: 800px) {
+      width: 80%;
+      margin-left: 10%;
+    }
+    @media (min-width: 1140px) {
+      width: 370px;
+      margin-left: 0;
+    }
   }
 }
 
@@ -171,7 +223,7 @@ hr {
   box-shadow: 2px 2px 10px rgb(211, 209, 235);
   cursor: pointer;
   opacity: 0;
-  animation: fadeInUp 1s forwards;
+  animation: fadeInUp 0.8s forwards;
 
   @keyframes fadeInUp {
     0% {
@@ -183,7 +235,7 @@ hr {
       transform: translateY(0);
     }
   }
-  
+
   &__plate {
     display: flex;
     flex-direction: column;
@@ -191,7 +243,6 @@ hr {
     margin: 10px 0 10px 10px;
     width: 85%;
     overflow: hidden;
-      
 
     p {
       font-size: 0.96rem;
@@ -244,7 +295,6 @@ hr {
         animation-duration: 0.8s;
         animation-fill-mode: both;
         font-size: 0;
-        
 
         @keyframes checkInRotate {
           0% {
