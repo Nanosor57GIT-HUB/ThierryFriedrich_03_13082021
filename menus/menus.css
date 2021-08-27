@@ -64,11 +64,17 @@ a {
 .restaurant--img {
   position: absolute;
   width: 100%;
-  height: 37%;
+  height: 40%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 30% 80%;
-     object-position: 30% 80%;
+  -o-object-position: 30% 70%;
+     object-position: 30% 70%;
+}
+
+@media (min-width: 1140px) {
+  .restaurant--img {
+    height: 80%;
+  }
 }
 
 .menuCard {
@@ -80,11 +86,17 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  top: 200px;
+  top: 220px;
   width: 100%;
   height: 100%;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
+}
+
+@media (min-width: 1140px) {
+  .menuCard {
+    top: 400px;
+  }
 }
 
 .menuCard__restaurant {
@@ -117,6 +129,18 @@ a {
   font-size: 1.8rem;
 }
 
+@media (min-width: 270px) {
+  .menuCard__restaurant--title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 326px) {
+  .menuCard__restaurant--title {
+    font-size: 1.8rem;
+  }
+}
+
 @media (min-width: 800px) {
   .menuCard__restaurant--title {
     font-size: 2.3rem;
@@ -135,7 +159,7 @@ a {
           justify-content: center;
   width: 25px;
   height: 25px;
-  margin-left: 5%;
+  margin-right: 10px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -158,7 +182,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #9356dc;
+  color: transparent;
   opacity: 0;
   font-size: 1.3rem;
   width: 22px;
@@ -219,7 +243,19 @@ a {
   }
 }
 
-.category {
+@media (min-width: 800px) {
+  .category {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 1140px) {
+  .category {
+    margin-left: 0;
+  }
+}
+
+.category__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +267,7 @@ a {
   margin-top: 20px;
 }
 
-hr {
+.category__title--hr {
   margin-left: 3%;
   width: 40px;
   height: 3px;
@@ -521,7 +557,7 @@ hr {
 .btn {
   display: block;
   height: 50px;
-  width: 220px;
+  width: 200px;
   border-radius: 25px;
   color: white;
   font-size: 1rem;
@@ -546,6 +582,13 @@ hr {
 }
 
 .footer {
-  margin-top: 200px;
+  margin-top: 220px;
+}
+
+@media (min-width: 1140px) {
+  .footer {
+    margin-top: 400px;
+    margin-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=menus.css.map */

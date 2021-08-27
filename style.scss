@@ -18,22 +18,22 @@ a {
   color: white;
 }
 //****************************************************************************
-$primary: #9356dc;
-$secondary: #ff79da;
-$tertiary: #99e2d0;
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
 
-$btnColor: linear-gradient(
+$btn-color: linear-gradient(
   27deg,
   rgba(147, 86, 220, 1) 0%,
   rgba(255, 121, 218, 1) 100%
 );
-$heartColor: linear-gradient(
+$heart-color: linear-gradient(
   27deg,
   rgba(147, 86, 220, 1) 0%,
   rgba(255, 121, 218, 1) 100%
 );
-$footer: #353535;
-$backgroundCard: #f6f6f6;
+$footer-color: #353535;
+$backgroundCard-color: #f6f6f6;
 
 /*PAGE*/
 .header {
@@ -46,8 +46,7 @@ $backgroundCard: #f6f6f6;
 
   &--logoUp {
     width: 180px;
-    //width: 45%;
-    height: 15%; //60px
+    height: 15%;
     margin: 0 auto;
 
     @media (min-width: 900px) {
@@ -55,17 +54,17 @@ $backgroundCard: #f6f6f6;
       height: 20%;
     }
   }
+
   &__location {
     width: 100%;
     height: 50px;
     font-size: 1.1rem;
     font-weight: bold;
-    background: rgb(147, 86, 220);
     background: linear-gradient(
       360deg,
-      rgba(222, 220, 242, 1) 80%,
-      rgba(210, 210, 218, 0.8) 85%,
-      rgba(61, 185, 207, 0.8) 100%
+      rgba(234, 234, 234, 1) 14%,
+      rgba(233, 233, 233, 1) 85%,
+      rgba(213, 213, 213, 1) 100%
     );
 
     &--place {
@@ -85,12 +84,13 @@ $backgroundCard: #f6f6f6;
     }
   }
 }
+
 .header__explore {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: $backgroundCard;
+  background-color: $backgroundCard-color;
   width: 100%;
   height: 300px;
 
@@ -101,19 +101,21 @@ $backgroundCard: #f6f6f6;
     text-align: center;
     margin-top: 20px;
   }
+
   p {
     font-size: 1.1rem;
     text-align: center;
     width: 100%;
     color: rgb(121, 117, 120);
   }
+
   &--btn {
     height: 50px;
     width: 220px;
     border-radius: 25px;
     color: #fff;
     font-size: 1rem;
-    background: $btnColor;
+    background: $btn-color;
     border: none;
     margin-bottom: 20px;
     box-shadow: 1px 1px 6px rgb(166, 166, 221);
@@ -127,7 +129,7 @@ $backgroundCard: #f6f6f6;
     }
   }
 }
-//réduire fonctionnement et mettre un disolay-flex en center à 1030
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -173,7 +175,7 @@ $backgroundCard: #f6f6f6;
       margin: 0 auto;
       width: 90%;
       height: 20%;
-      background-color: $backgroundCard;
+      background-color: $backgroundCard-color;
       border-radius: 20px;
       box-shadow: 1px 3px 18px rgb(170, 220, 241);
       cursor: pointer;
@@ -190,7 +192,7 @@ $backgroundCard: #f6f6f6;
       box-shadow: 1px 3px 18px rgb(156, 209, 231);
 
       .fas {
-        color: $primary;
+        color: $primary-color;
       }
     }
   }
@@ -201,17 +203,22 @@ $backgroundCard: #f6f6f6;
   font-weight: 600;
   margin-left: 20px;
 
-  @media (min-width: 1120px) {
+  @media (min-width: 600px) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 0.9rem;
+  }
+
+  @media (min-width: 1150px) {
     font-size: 1.3rem;
     font-weight: 500;
   }
 }
-.choix p {
-  margin-left: 27px;
 
-  /* @media (min-width: 1120px) {
-    font-size: 1.3rem;
-  }*/
+.choix p {
+  margin-left: 24px;
 }
 
 .label {
@@ -226,8 +233,10 @@ $backgroundCard: #f6f6f6;
     align-items: center;
     justify-content: center;
     width: 24px;
+    min-width: 24px;
     height: 24px;
-    background-color: $primary;
+    min-height: 24px;
+    background-color: $primary-color;
     border-radius: 25px;
     color: white;
 
@@ -242,36 +251,46 @@ $backgroundCard: #f6f6f6;
     align-items: center;
 
     .icoMenu {
+      display: flex;
+      flex-direction: row;
       color: rgb(63, 112, 114);
       font-size: 1.2rem;
       margin-top: 2px;
-      margin-left: 20px;
+      margin-left: 15px;
+      width: 25px;
     }
   }
+
   &--icoStore {
     color: rgb(63, 112, 114);
     font-size: 1.2rem;
     margin-bottom: 2px;
-    margin-left: 20px;
+    margin-left: 15px;
+    width: 25px;
   }
 
   &--icoMobile {
     color: rgb(63, 112, 114);
     font-size: 1.2rem;
     margin-bottom: 5px;
-    margin-left: 30px;
+    margin-left: 22px;
+    width: 15px;
   }
 }
 
 .restaurants {
-  background-color: $backgroundCard;
+  background-color: $backgroundCard-color;
   width: 100%;
-  height: auto; /*1200px*/
+  height: 1200px;
+
+  @media (min-width: 900px) {
+    height: 730px;
+  }
 
   &--title {
     display: flex;
     align-items: flex-end;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     width: 90%;
     height: 60px;
@@ -310,6 +329,7 @@ $backgroundCard: #f6f6f6;
     @media (min-width: 900px) {
       width: 45%;
     }
+
     &:hover {
       transform: scale(1.01);
       box-shadow: 1px 5px 15px rgb(156, 209, 231);
@@ -320,22 +340,19 @@ $backgroundCard: #f6f6f6;
       height: 180px;
       border-radius: 20px 20px 0 0;
       object-fit: cover;
-      //object-position: center;
-      object-position: 50% -40px;
-    }
-    .img2 {
-      object-position: 50% -170px;
+      object-position: 50% 50%;
     }
 
     .newRestaurant {
       position: relative;
     }
+
     &--new {
       position: absolute;
       vertical-align: middle;
       right: 10px;
       top: 10px;
-      background-color: $tertiary;
+      background-color: $tertiary-color;
       color: #008766;
       width: 80px;
       height: 30px;
@@ -344,6 +361,7 @@ $backgroundCard: #f6f6f6;
       border-radius: 3px;
       box-shadow: 1px 1px 5px;
     }
+
     &--name {
       display: flex;
       flex-direction: row;
@@ -354,6 +372,7 @@ $backgroundCard: #f6f6f6;
       margin-top: 15px;
       color: #000;
     }
+
     .heartLike {
       display: flex;
       align-items: center;
@@ -365,12 +384,14 @@ $backgroundCard: #f6f6f6;
       height: 25px;
       cursor: pointer;
     }
+
     .far.fa-heart {
       position: relative;
       font-size: 1.5rem;
       margin-top: 2px;
       color: rgb(134, 120, 120);
     }
+
     .fas.fa-heart {
       position: absolute;
       display: flex;
@@ -381,7 +402,7 @@ $backgroundCard: #f6f6f6;
       width: 22px;
       height: 20px;
       margin-top: 2px;
-      background-image: $heartColor;
+      background: $heart-color;
       -webkit-background-clip: text;
       color: transparent;
     }
@@ -390,6 +411,7 @@ $backgroundCard: #f6f6f6;
       animation: fadein 0.8s forwards;
       opacity: 0;
     }
+
     @keyframes fadein {
       0% {
         opacity: 0;
@@ -410,11 +432,12 @@ $backgroundCard: #f6f6f6;
     }
   }
 }
+
 .footer {
   display: flex;
   width: 100%;
   height: 200px;
-  background-color: $footer;
+  background-color: $footer-color;
 
   &__block {
     display: flex;
@@ -430,26 +453,31 @@ $backgroundCard: #f6f6f6;
       height: 40px;
       fill: #fff;
     }
+
     &--links {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       width: 100%;
       height: 120px;
+      color: #fff;
 
       @media (min-width: 900px) {
         align-items: center;
+      }
 
-        @media (min-width: 1200px) {
-          flex-direction: row;
-          width: 70%;
-          margin-left: 25%;
+      @media (min-width: 1200px) {
+        flex-direction: row;
+        width: 70%;
+        margin-left: 25%;
+        margin-bottom: 50px;
+      }
+
+      @media (min-width: 1200px) {
+        .suggest {
+          margin-bottom: 10px;
         }
       }
-    }
-    .fa-utensils,
-    .fa-hands-helping {
-      color: white;
     }
   }
 }

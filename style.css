@@ -59,9 +59,8 @@ a {
   height: 50px;
   font-size: 1.1rem;
   font-weight: bold;
-  background: #9356dc;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #dedcf2), color-stop(85%, rgba(210, 210, 218, 0.8)), to(rgba(61, 185, 207, 0.8)));
-  background: linear-gradient(360deg, #dedcf2 80%, rgba(210, 210, 218, 0.8) 85%, rgba(61, 185, 207, 0.8) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(14%, #eaeaea), color-stop(85%, #e9e9e9), to(#d5d5d5));
+  background: linear-gradient(360deg, #eaeaea 14%, #e9e9e9 85%, #d5d5d5 100%);
 }
 
 .header__location--place {
@@ -259,7 +258,19 @@ a {
   margin-left: 20px;
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 600px) {
+  .label p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .label p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1150px) {
   .label p {
     font-size: 1.3rem;
     font-weight: 500;
@@ -267,10 +278,7 @@ a {
 }
 
 .choix p {
-  margin-left: 27px;
-  /* @media (min-width: 1120px) {
-    font-size: 1.3rem;
-  }*/
+  margin-left: 24px;
 }
 
 .label {
@@ -299,7 +307,9 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 24px;
+  min-width: 24px;
   height: 24px;
+  min-height: 24px;
   background-color: #9356dc;
   border-radius: 25px;
   color: white;
@@ -322,31 +332,46 @@ a {
 }
 
 .label__menuIcone .icoMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: #3f7072;
   font-size: 1.2rem;
   margin-top: 2px;
-  margin-left: 20px;
+  margin-left: 15px;
+  width: 25px;
 }
 
 .label--icoStore {
   color: #3f7072;
   font-size: 1.2rem;
   margin-bottom: 2px;
-  margin-left: 20px;
+  margin-left: 15px;
+  width: 25px;
 }
 
 .label--icoMobile {
   color: #3f7072;
   font-size: 1.2rem;
   margin-bottom: 5px;
-  margin-left: 30px;
+  margin-left: 22px;
+  width: 15px;
 }
 
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
-  height: auto;
-  /*1200px*/
+  height: 1200px;
+}
+
+@media (min-width: 900px) {
+  .restaurants {
+    height: 730px;
+  }
 }
 
 .restaurants--title {
@@ -356,7 +381,7 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   width: 90%;
   height: 60px;
@@ -439,14 +464,8 @@ a {
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% -40px;
-     object-position: 50% -40px;
-}
-
-.restaurants__cards--card .img2,
-.restaurants__cards a .img2 {
-  -o-object-position: 50% -170px;
-     object-position: 50% -170px;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .restaurants__cards--card .newRestaurant,
@@ -534,7 +553,7 @@ a {
   width: 22px;
   height: 20px;
   margin-top: 2px;
-  background-image: linear-gradient(27deg, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(27deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -621,10 +640,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: 120px;
+  color: #fff;
 }
 
 @media (min-width: 900px) {
@@ -635,7 +656,7 @@ a {
   }
 }
 
-@media (min-width: 900px) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .footer__block--links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -643,11 +664,13 @@ a {
             flex-direction: row;
     width: 70%;
     margin-left: 25%;
+    margin-bottom: 50px;
   }
 }
 
-.footer__block .fa-utensils,
-.footer__block .fa-hands-helping {
-  color: white;
+@media (min-width: 1200px) {
+  .footer__block--links .suggest {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
