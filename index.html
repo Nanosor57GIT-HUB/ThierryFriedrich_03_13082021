@@ -48,7 +48,7 @@
 
         <div class="header__location">
           <div class="header__location--place">
-            <i class="fas fa-map-marker-alt location--marker"></i>
+            <i class="fas fa-map-marker-alt header__location--marker"></i>
             <p class="header__location--city">Paris, Belleville</p>
           </div>
         </div>
@@ -65,42 +65,47 @@
     </header>
 
     <main>
+      <!--FONCTIONNEMENT-->
       <section class="fonctionnement">
         <h3 class="fonctionnement__title">Fonctionnement</h3>
 
         <div class="fonctionnement__explications">
-          <div class="fonctionnement__explications--card choix">
-            <div class="label choix">
+
+          <!--cards functioning-->
+          <div class="fonctionnement__explications--card choisissez">
+            <div class="label choisir">
               <i class="label--number">1</i>
               <i class="fas fa-mobile-alt label--icoMobile"></i>
-              <p>Choisissez un restaurant</p>
+              <p class="how--choice choice">
+                Choisissez un restaurant
+              </p>
             </div>
           </div>
 
-          <div class="fonctionnement__explications--card composer">
+          <div class="fonctionnement__explications--card composez">
             <div class="label composer">
-              <div class="label__menuIcone">
-                <i class="label--number">2</i>
-                <div class="icoMenu">
-                  <i class="fas fa-ellipsis-v icoMenu--ellipsis"
-                    ><i class="fas fa-bars icoMenu--barre"></i>
-                  </i>
-                </div>
+              <i class="label--number">2</i>
+              <div class="icoMenu">
+                <i class="fas fa-ellipsis-v icoMenu--ellipsis"
+                  ><i class="fas fa-bars icoMenu--barre"></i>
+                </i>
               </div>
-              <p>Composez votre menu</p>
+
+              <p class="how--compose">Composez votre menu</p>
             </div>
           </div>
 
           <div class="fonctionnement__explications--card dégustez">
             <div class="label déguster">
               <i class="label--number">3</i>
-              <i class="fas fa-store label--icoStore"></i>
-              <p>Dégustez au restaurant</p>
+              <i class="fas fa-store label__icoStore"></i>
+              <p class="how--taste">Dégustez au restaurant</p>
             </div>
           </div>
         </div>
       </section>
 
+      <!--cards restaurants-->
       <section class="restaurants">
         <h2 class="restaurants--title">Restaurants</h2>
 
@@ -186,6 +191,7 @@
       </section>
     </main>
 
+    <!--FOOTER-->
     <footer class="footer">
       <div class="footer__block">
         <img
@@ -193,17 +199,19 @@
           src="images/logo/ohmyfood@2xblanc.svg"
           alt="logo footer"
         />
-        <ul class="footer__block--links">
-          <li class="footer__block--suggest suggest">
-            <i class="fas fa-utensils"></i>
+        <ul class="ul">
+          <li class="ul__link--suggest">
+            <i class="fas fa-utensils utensils footerIco--utensils"></i>
             <a href="#">Proposer un restaurant</a>
           </li>
-          <li class="footer__block--partnairs">
-            <i class="fas fa-hands-helping"></i>
+          <li class="ul__link--partnairs">
+            <i class="fas fa-hands-helping footerIco--hands"></i>
             <a href="#">Devenir partenaire</a>
           </li>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="mailto:email@sample.com">Contact</a></li>
+          <li class="ul_link--legality"><a href="#">Mentions légales</a></li>
+          <li class="ul__link--contact">
+            <a href="mailto:email@sample.com">Contact</a>
+          </li>
         </ul>
       </div>
     </footer>

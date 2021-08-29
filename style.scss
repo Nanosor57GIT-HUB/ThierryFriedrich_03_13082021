@@ -15,7 +15,7 @@ a {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 //****************************************************************************
 $primary-color: #9356dc;
@@ -33,7 +33,7 @@ $heart-color: linear-gradient(
   rgba(255, 121, 218, 1) 100%
 );
 $footer-color: #353535;
-$backgroundCard-color: #f6f6f6;
+$bgCard-color: #f6f6f6;
 
 /*PAGE*/
 .header {
@@ -45,20 +45,26 @@ $backgroundCard-color: #f6f6f6;
   height: 400px;
 
   &--logoUp {
-    width: 180px;
-    height: 15%;
+    width: 170px;
+    height: 14%;
     margin: 0 auto;
 
     @media (min-width: 900px) {
       width: 20%;
       height: 20%;
+
+      @media (min-width: 1024px) {
+        height: 25%;
+      }
     }
   }
 
   &__location {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 50px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     background: linear-gradient(
       360deg,
@@ -67,12 +73,22 @@ $backgroundCard-color: #f6f6f6;
       rgba(213, 213, 213, 1) 100%
     );
 
+    @media (min-width: 1024px) {
+      height: 70px;
+      font-size: 1.2rem;
+    }
+
     &--place {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50px;
       margin-right: 30px;
+      width: 100%;
+      height: 50px;
+
+      @media (min-width: 1024px) {
+        margin-top: 8px;
+      }
 
       &--marker {
         color: #353535;
@@ -80,7 +96,8 @@ $backgroundCard-color: #f6f6f6;
     }
 
     &--city {
-      margin-left: 15px;
+      margin-left: 18px;
+      margin-top: 4px;
     }
   }
 }
@@ -90,7 +107,7 @@ $backgroundCard-color: #f6f6f6;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: $backgroundCard-color;
+  background-color: $bgCard-color;
   width: 100%;
   height: 300px;
 
@@ -175,7 +192,7 @@ $backgroundCard-color: #f6f6f6;
       margin: 0 auto;
       width: 90%;
       height: 20%;
-      background-color: $backgroundCard-color;
+      background-color: $bgCard-color;
       border-radius: 20px;
       box-shadow: 1px 3px 18px rgb(170, 220, 241);
       cursor: pointer;
@@ -196,29 +213,6 @@ $backgroundCard-color: #f6f6f6;
       }
     }
   }
-}
-
-.label p {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-left: 20px;
-
-  @media (min-width: 600px) {
-    font-size: 1.2rem;
-  }
-
-  @media (min-width: 900px) {
-    font-size: 0.9rem;
-  }
-
-  @media (min-width: 1150px) {
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-}
-
-.choix p {
-  margin-left: 24px;
 }
 
 .label {
@@ -243,25 +237,10 @@ $backgroundCard-color: #f6f6f6;
     @media (min-width: 900px) {
       width: 27px;
       height: 27px;
+ }
     }
-  }
 
-  &__menuIcone {
-    display: flex;
-    align-items: center;
-
-    .icoMenu {
-      display: flex;
-      flex-direction: row;
-      color: rgb(63, 112, 114);
-      font-size: 1.2rem;
-      margin-top: 2px;
-      margin-left: 15px;
-      width: 25px;
-    }
-  }
-
-  &--icoStore {
+  &__icoStore {
     color: rgb(63, 112, 114);
     font-size: 1.2rem;
     margin-bottom: 2px;
@@ -275,11 +254,43 @@ $backgroundCard-color: #f6f6f6;
     margin-bottom: 5px;
     margin-left: 22px;
     width: 15px;
+   
   }
 }
+.icoMenu {
+      display: flex;
+      flex-direction: row;
+      color: rgb(63, 112, 114);
+      font-size: 1.2rem;
+      margin-left: 15px;
+      width: 25px;  
+  }
+
+.how { &--compose, &--taste, &--choice {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 20px;
+
+ 
+  
+  @media (min-width: 600px) {
+    font-size: 1.2rem;
+  
+
+  @media (min-width: 900px) {
+    font-size: 0.9rem;
+  
+
+  @media (min-width: 1150px) {
+    font-size: 1.3rem;
+    font-weight: 500;
+} }}}}
+
+
+
 
 .restaurants {
-  background-color: $backgroundCard-color;
+  background-color: $bgCard-color;
   width: 100%;
   height: 1200px;
 
@@ -298,7 +309,7 @@ $backgroundCard-color: #f6f6f6;
     margin-bottom: 3%;
   }
 }
-
+/*CARDS*/
 .restaurants__cards {
   display: flex;
   flex-direction: column;
@@ -370,9 +381,14 @@ $backgroundCard-color: #f6f6f6;
       justify-content: space-between;
       margin-left: 15px;
       margin-top: 15px;
-      color: #000;
-    }
 
+      h3 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+    }
+/*heart*/
     .heartLike {
       display: flex;
       align-items: center;
@@ -384,14 +400,14 @@ $backgroundCard-color: #f6f6f6;
       height: 25px;
       cursor: pointer;
     }
-
+    /*heart border*/
     .far.fa-heart {
       position: relative;
       font-size: 1.5rem;
       margin-top: 2px;
       color: rgb(134, 120, 120);
     }
-
+    /*heart solid*/
     .fas.fa-heart {
       position: absolute;
       display: flex;
@@ -403,10 +419,11 @@ $backgroundCard-color: #f6f6f6;
       height: 20px;
       margin-top: 2px;
       background: $heart-color;
+      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
     }
-
+    /*heart animation*/
     .fas.fa-heart:hover {
       animation: fadein 0.8s forwards;
       opacity: 0;
@@ -424,17 +441,11 @@ $backgroundCard-color: #f6f6f6;
         transform: translate(0);
       }
     }
-
-    &--name h3 {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
   }
 }
 
+/*FOOTER*/
 .footer {
-  display: flex;
   width: 100%;
   height: 200px;
   background-color: $footer-color;
@@ -444,40 +455,53 @@ $backgroundCard-color: #f6f6f6;
     flex-direction: column;
     margin-left: 5%;
     width: 90%;
+    height: 200px;
 
     &--logoDown {
       width: 29%;
       min-width: 100px;
       max-width: 200px;
-      margin-top: 10px;
+      margin-top: 13px;
       height: 40px;
       fill: #fff;
     }
+  }
 
-    &--links {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 100%;
-      height: 120px;
-      color: #fff;
+  .ul {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    margin-top: 4px;
 
-      @media (min-width: 900px) {
-        align-items: center;
+    &--link,
+    a,
+    i {
+      color: white;
+    }
+    .footerIco {
+      &--utensils {
+        margin-right: 11px;
+        font-size: 0.9rem;
       }
 
-      @media (min-width: 1200px) {
-        flex-direction: row;
-        width: 70%;
-        margin-left: 25%;
-        margin-bottom: 50px;
+      &--hands {
+        margin-right: 6px;
+        font-size: 0.8rem;
       }
+    }
+    @media (min-width: 900px) {
+      align-items: center;
+      margin-left: 20%;
+    }
 
-      @media (min-width: 1200px) {
-        .suggest {
-          margin-bottom: 10px;
-        }
-      }
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      width: 80%;
+      //margin-left: 24%;
+      margin-bottom: 50px;
     }
   }
 }
+  
