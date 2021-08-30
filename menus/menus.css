@@ -26,6 +26,8 @@ a {
   color: white;
 }
 
+/*PAGE*/
+/*HEADER*/
 .header__menus {
   height: 9%;
   display: -webkit-box;
@@ -61,6 +63,7 @@ a {
   }
 }
 
+/*MAIN*/
 .restaurant--img {
   position: absolute;
   width: 100%;
@@ -77,6 +80,7 @@ a {
   }
 }
 
+/*section menus cards*/
 .menuCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,6 +119,7 @@ a {
           align-items: center;
   width: 100%;
   height: 100px;
+  /*heart*/
 }
 
 @media (min-width: 800px) {
@@ -187,7 +192,6 @@ a {
   width: 22px;
   height: 20px;
   background-image: linear-gradient(27deg, #9356dc 0%, #ff79da 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -276,6 +280,7 @@ a {
   border: none;
 }
 
+/*menus cards*/
 .menu {
   width: 100%;
   height: 240px;
@@ -291,6 +296,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*page menus2 (adaptation for more menus)*/
 }
 
 @media (min-width: 800px) {
@@ -380,6 +386,13 @@ a {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@media (min-width: 1140px) {
+  .labelMenu {
+    -webkit-animation: fadeInUp 0.4s forwards;
+            animation: fadeInUp 0.4s forwards;
   }
 }
 
@@ -510,6 +523,7 @@ a {
   }
 }
 
+/*animation staggered at opening*/
 .lM2 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
@@ -555,6 +569,7 @@ a {
           animation-delay: 2.7s;
 }
 
+/*button "commander"*/
 .btn {
   display: block;
   height: 50px;

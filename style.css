@@ -23,6 +23,7 @@ a {
 }
 
 /*PAGE*/
+/*HEADER*/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +40,7 @@ a {
           justify-content: space-between;
   width: 100%;
   height: 400px;
+  /*location*/
 }
 
 .header--logoUp {
@@ -129,6 +131,7 @@ a {
   background-color: #f6f6f6;
   width: 100%;
   height: 300px;
+  /*button "explorer nos restaurants"*/
 }
 
 .header__explore h1 {
@@ -172,6 +175,8 @@ a {
           box-shadow: 2px 4px 10px #a6a6dd;
 }
 
+/*MAIN*/
+/*functioning*/
 .fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,6 +188,7 @@ a {
   width: 96%;
   height: 400px;
   margin: auto 3%;
+  /*functioning cards*/
 }
 
 @media (min-width: 900px) {
@@ -279,6 +285,7 @@ a {
   color: #9356dc;
 }
 
+/*functioning cards label*/
 .label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,6 +382,7 @@ a {
   }
 }
 
+/*restaurants selection*/
 .restaurants {
   background-color: #f6f6f6;
   width: 100%;
@@ -402,7 +410,7 @@ a {
   margin-bottom: 3%;
 }
 
-/*CARDS*/
+/*restaurants cards*/
 .restaurants__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,8 +463,6 @@ a {
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
   /*heart*/
-  /*heart border*/
-  /*heart solid*/
   /*heart animation*/
 }
 
@@ -578,7 +584,6 @@ a {
   height: 20px;
   margin-top: 2px;
   background: linear-gradient(27deg, #9356dc 0%, #ff79da 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -686,7 +691,6 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 20%;
   }
 }
 
@@ -698,6 +702,7 @@ a {
             flex-direction: row;
     width: 80%;
     margin-bottom: 50px;
+    margin-left: 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */

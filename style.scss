@@ -36,6 +36,8 @@ $footer-color: #353535;
 $bgCard-color: #f6f6f6;
 
 /*PAGE*/
+
+/*HEADER*/
 .header {
   display: flex;
   flex-direction: column;
@@ -58,7 +60,7 @@ $bgCard-color: #f6f6f6;
       }
     }
   }
-
+  /*location*/
   &__location {
     display: flex;
     justify-content: center;
@@ -125,7 +127,7 @@ $bgCard-color: #f6f6f6;
     width: 100%;
     color: rgb(121, 117, 120);
   }
-
+  /*button "explorer nos restaurants"*/
   &--btn {
     height: 50px;
     width: 220px;
@@ -146,7 +148,8 @@ $bgCard-color: #f6f6f6;
     }
   }
 }
-
+/*MAIN*/
+/*functioning*/
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -171,7 +174,7 @@ $bgCard-color: #f6f6f6;
       margin-left: 1%;
     }
   }
-
+  /*functioning cards*/
   &__explications {
     display: flex;
     flex-direction: column;
@@ -214,7 +217,7 @@ $bgCard-color: #f6f6f6;
     }
   }
 }
-
+/*functioning cards label*/
 .label {
   display: flex;
   flex-direction: row;
@@ -237,8 +240,8 @@ $bgCard-color: #f6f6f6;
     @media (min-width: 900px) {
       width: 27px;
       height: 27px;
- }
     }
+  }
 
   &__icoStore {
     color: rgb(63, 112, 114);
@@ -254,41 +257,41 @@ $bgCard-color: #f6f6f6;
     margin-bottom: 5px;
     margin-left: 22px;
     width: 15px;
-   
   }
 }
 .icoMenu {
-      display: flex;
-      flex-direction: row;
-      color: rgb(63, 112, 114);
+  display: flex;
+  flex-direction: row;
+  color: rgb(63, 112, 114);
+  font-size: 1.2rem;
+  margin-left: 15px;
+  width: 25px;
+}
+
+.how {
+  &--compose,
+  &--taste,
+  &--choice {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 20px;
+
+    @media (min-width: 600px) {
       font-size: 1.2rem;
-      margin-left: 15px;
-      width: 25px;  
+
+      @media (min-width: 900px) {
+        font-size: 0.9rem;
+
+        @media (min-width: 1150px) {
+          font-size: 1.3rem;
+          font-weight: 500;
+        }
+      }
+    }
   }
+}
 
-.how { &--compose, &--taste, &--choice {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-left: 20px;
-
- 
-  
-  @media (min-width: 600px) {
-    font-size: 1.2rem;
-  
-
-  @media (min-width: 900px) {
-    font-size: 0.9rem;
-  
-
-  @media (min-width: 1150px) {
-    font-size: 1.3rem;
-    font-weight: 500;
-} }}}}
-
-
-
-
+/*restaurants selection*/
 .restaurants {
   background-color: $bgCard-color;
   width: 100%;
@@ -309,7 +312,7 @@ $bgCard-color: #f6f6f6;
     margin-bottom: 3%;
   }
 }
-/*CARDS*/
+/*restaurants cards*/
 .restaurants__cards {
   display: flex;
   flex-direction: column;
@@ -388,7 +391,7 @@ $bgCard-color: #f6f6f6;
         margin-bottom: 8px;
       }
     }
-/*heart*/
+    /*heart*/
     .heartLike {
       display: flex;
       align-items: center;
@@ -400,14 +403,14 @@ $bgCard-color: #f6f6f6;
       height: 25px;
       cursor: pointer;
     }
-    /*heart border*/
+
     .far.fa-heart {
       position: relative;
       font-size: 1.5rem;
       margin-top: 2px;
       color: rgb(134, 120, 120);
     }
-    /*heart solid*/
+
     .fas.fa-heart {
       position: absolute;
       display: flex;
@@ -419,7 +422,6 @@ $bgCard-color: #f6f6f6;
       height: 20px;
       margin-top: 2px;
       background: $heart-color;
-      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
     }
@@ -493,15 +495,13 @@ $bgCard-color: #f6f6f6;
     }
     @media (min-width: 900px) {
       align-items: center;
-      margin-left: 20%;
     }
 
     @media (min-width: 1200px) {
       flex-direction: row;
       width: 80%;
-      //margin-left: 24%;
       margin-bottom: 50px;
+      margin-left: 20%;
     }
   }
 }
-  
