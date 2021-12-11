@@ -3,7 +3,7 @@
      
 
 
-const url = "./FishEyeData.json";
+const url = "API/FishEyeData.json";
    fetch(url).then((response) =>
      response.json().then(function (data)  {
        let photographers = data.photographers;

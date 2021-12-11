@@ -14,7 +14,7 @@
 
 
 /*export*/ function getData2() {
-  fetch("./FishEyeData.json").then((response) => response.json().then((data) => {
+  fetch("API/FishEyeData.json").then((response) => response.json().then((data) => {
     let photographers = data.photographers;
     createPhotographsMedia(photographers);
   })

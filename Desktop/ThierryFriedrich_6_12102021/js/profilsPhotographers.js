@@ -1,7 +1,7 @@
 //import getData from "./facto.js"
 
 /*export*/ const getData = () => {
-  fetch("./FishEyeData.json").then((response) =>
+  fetch("API/FishEyeData.json").then((response) =>
     response.json().then((data) => {
       const photographers = data.photographers;
       createPhotographsProfils(photographers); 

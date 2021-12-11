@@ -1,5 +1,5 @@
 /*export*/ const getData3 = () => {
-  fetch("./FishEyeData.json").then((response) =>
+  fetch("API/FishEyeData.json").then((response) =>
     response.json().then((data) => {
       const Data = data;
       createMedia(Data);

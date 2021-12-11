@@ -7,7 +7,7 @@ function containerLightB() {
 }*/
 
 /*export*/ const getData4 = () => {
-  fetch("./FishEyeData.json").then((response) =>
+  fetch("API/FishEyeData.json").then((response) =>
     response.json().then((data) => {
       const datamedia = data.media;
       displayBox(datamedia)
