@@ -1,9 +1,9 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* Lorsque l'utilisateur clique sur le bouton,
+basculer entre le masquage et l'affichage du contenu de la liste déroulante */
 function myFunction() {
   let dropdown = document.getElementById("myDropdown").classList.toggle("show");
-//console.log(dropdown);
-  // Close the dropdown if the user clicks outside of it
+
+  // Ferme la liste déroulante si l'utilisateur clique en dehors de celle-ci
   window.onclick = function (event) {
     if (!event.target.matches(".dropbtn")) {
       let dropdowns = document.getElementsByClassName("dropdown-content");
@@ -18,7 +18,7 @@ function myFunction() {
   };
 }
 
-function displayBox() {
+function displayListBox() {
   document.querySelector(".dropdown").innerHTML = `
   <div class="containerListBox">
   <div class="sortList">
@@ -35,4 +35,8 @@ function displayBox() {
   </div>
   `;
 }
-displayBox();
+displayListBox();
+
+const displaySort = document.querySelector(".displayMedia")
+
+

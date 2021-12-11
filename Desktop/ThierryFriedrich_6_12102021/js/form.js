@@ -8,11 +8,11 @@ const url = "API/FishEyeData.json";
      response.json().then(function (data)  {
        let photographers = data.photographers;
  return photographers.map((photographers) => {
-  // photographers.filter((photographers) => photographers.id == extractId);
+   //photographers.filter((photographers) => photographers.id == extractId);
+  //const fullnames = photographers.map(photographers => `${photographers.name}`)
 
 const modalbg = document.querySelector(".modal");
 
-//console.log(modalbg);
 modalbg.innerHTML = `
 <div class="windowContact">
           <div class="modalContact">
@@ -59,7 +59,7 @@ modalbg.innerHTML = `
                 <input
                   type="email"
                   name="email"
-                  placeholder="Mettre votre Email"
+                  placeholder="Exemple@contact.fr"
                   id="email"
                   minlength="10"
                   maxlength="60"
@@ -80,7 +80,8 @@ modalbg.innerHTML = `
                 ></textarea>
               </div>
               <div class="submitForm-btn">
-                <input type="submit" aria-label="Send" class="btn-Envoyer" value="Envoyer"/>
+                <input type="submit" aria-label="Send" class="btn-Envoyer" id
+                submit-btn value="Envoyer"/>
               </div>
             </form>
           </div>

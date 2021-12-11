@@ -1,4 +1,4 @@
-/*export*/ const getData3 = () => {
+ const getData3 = () => {
   fetch("API/FishEyeData.json").then((response) =>
     response.json().then((data) => {
       const Data = data;
@@ -10,24 +10,22 @@
 getData3();
 
 function createMedia(Data) {
-  //console.log(Data);
   const photographerMedias = Data.media.filter(
     (DataMedia) => DataMedia.photographerId == extractId
   );
-  //console.log(photographersMedias);
-
+  
   const MediaCards = photographerMedias
     .map((DataMedia) => {
       let photographersInfos = Data.photographers.filter(
         (photographers) => photographers.id == extractId
       );
-      //console.log(photographersInfos);
+     
       return DataMedia.video == undefined
         ? `
         <div class="containerCardsMedias">
         <div class="ContentMediasCards">
         <a id="${DataMedia.id}" class="cardsMediaslink" href="" aria-label="${DataMedia.title}">
-        <img class="pictureMedia" src="./assets/Photos/${photographersInfos[0].name}/${DataMedia.image}" 
+        <img class="pictureMedia" class="displayMedia" src="./assets/Photos/${photographersInfos[0].name}/${DataMedia.image}" 
         width="350" height="300" alt="${DataMedia.title}">
         </a>
         
@@ -49,7 +47,7 @@ function createMedia(Data) {
         <div class="ContentMediasCards">
         <a id="${DataMedia.id}" class="cardsMediaslink" href="" aria-label="${DataMedia.title}">
        
-        <video controls="controls" role="button" class="videoMedia" width="350" height="300">
+        <video controls="controls" role="button" class="videoMedia" class="displayMedia" width="350" height="300">
       <source src="./assets/videos/${DataMedia.video}" type=video/mp4>
     </video>
         </a>
@@ -75,12 +73,11 @@ function createMedia(Data) {
           <div class="likeInfosMedia">
         <p class="price">${DataMedia.price} €/Jour</p>
         </div>
-        </div>
-        
+        </div>      
         `;
     })
     .join("");
-  //console.log(MediaCards);
+ 
   const photographes = document.querySelector(".MediasContainer");
   photographes.innerHTML = MediaCards;
 }

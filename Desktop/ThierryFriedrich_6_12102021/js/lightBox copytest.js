@@ -1,25 +1,26 @@
 
-
 // class pictureMedia et videoMedia pour click
+//data.media.image / data.media.video
 
-
- const getData3 = () => {
+const getDataMedias = () => {
   fetch("API/FishEyeData.json").then((response) =>
     response.json().then((data) => {
-      const datamedia = data.media;
-      displayBox(datamedia)
+      const Data = data;
+      createMediaBox(Data);
     })
   );
 };
 
-getData3();
-console.log(getData3());
+getDataMedias()
 
-function displayBox(datamedia) {
+function createMediaBox(Data) {
+  const Medias = Data.media.filter(
+    (DataMedia) => DataMedia.title);
 
-    document.getElementById(
-      "containerLightB"
-    ).innerHTML = `<div class="lightbox">
+    const Modalbox = document.getElementById(
+      "containerLightB")
+    
+    Modalbox.innerHTML = `<div class="lightbox">
         <div class="btn-sideLeft">
           <button class="lightboxPrevious"></button>
         </div>
@@ -28,33 +29,37 @@ function displayBox(datamedia) {
           <img
             class="picturebox"
             src="../assets/Photos/Mimi Keel/Travel_Lonesome.jpg"
-            alt="${datamedia.title}"
+            alt="${Medias.title}"
           />
           
-          <p class="title">${datamedia.title}</p>
+          <p class="title">${Medias.title}</p>
         </div>
         <div class="btn-sideRight">
           <button class="lightboxClose"></button>
           <button class="lightboxNext" aria-label="image suivante"></button>
         </div>
       </div>`;
+
+ /*const OpenModalbox = document.querySelectorAll(".displayMedia");
+ OpenModalbox.onclick = () => {
+   Modalbox.style.display = "block";
+ }; */
+  const CloseModalbox = document.querySelector(".lightboxClose");
+CloseModalbox.onclick = () => {
+  Modalbox.style.display = "none";
 }
+};
+
+   
+
+      
 
 
 
 
+//close modal lightBox by cross
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 //displayBox();

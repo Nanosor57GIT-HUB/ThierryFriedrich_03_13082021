@@ -13,7 +13,7 @@
    // console.log(extractId);
 
 
-/*export*/ function getData2() {
+ function getData2() {
   fetch("API/FishEyeData.json").then((response) => response.json().then((data) => {
     let photographers = data.photographers;
     createPhotographsMedia(photographers);
@@ -21,7 +21,6 @@
   );
 }
 getData2();
-
 
 function createPhotographsMedia(photographersID) {
   const photographers = photographersID.filter(
@@ -74,20 +73,28 @@ function createPhotographsMedia(photographersID) {
   Contactbtn.onclick = () => {
     Modal.style.display = "block";
 
-  //Close modal by cross
+  //Close modal form by cross
   const CloseModal = document.querySelector(".formClose");
   CloseModal.onclick = () => {
     Modal.style.display = "none";
-  }
-const EnvoyerBtn = document.querySelector(".btn-Envoyer");
-EnvoyerBtn.onclick = () => {
-  Modal.style.display = "none";
-  //window.location.href;
-   //window.history.back();
-   console.log(EnvoyerBtn);
-}
-};
  } 
+   //Close Modal
+const EnvoyerBtn = document.querySelector(".btn-Envoyer");
+EnvoyerBtn.onclick = (e) => {
+  Modal.style.display = "none";
+  e.preventDefault();
+   console.log('ok');
+}
+
+//close modal lightBox by cross
+/*const Modalbox = document.querySelector("#containerLightB");
+const CloseModalbox = document.querySelector(".lightboxClose");
+CloseModalbox.onclick = () => {
+  Modalbox.style.display = "none";
+}; */
+ }
+};
+
 
 
  //a voir si intégration sur button contactez-mo : onclick="window.location.href = 'mediasbyprofil.html?id=${photographers.id}';"
@@ -98,3 +105,11 @@ EnvoyerBtn.onclick = () => {
 //3) regarder et ajouter l'accéssibilité (text et clavier)
 //4) lightbox
 //5) formulaire modal
+
+
+/*du coup j'ai mis le html de ton modal dans mediasProfil dans ta div modal puis
+ le bouton je lui ai rajouté un id "submit-btn" et
+ dans form.js -> document.getElementById('submit-btn').addEventListener('click', function(e) {
+e.preventDefault();
+console.log('ok')
+});*/
