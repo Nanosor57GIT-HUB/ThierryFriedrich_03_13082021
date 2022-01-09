@@ -1,4 +1,6 @@
 // 2 medias
+
+
 async function getData(photographerId) {
   const res = await fetch("data/FishEyeData.json", {
     headers: {
@@ -12,12 +14,14 @@ async function getData(photographerId) {
     .filter((obj) => obj.photographerId === photographerId)
     .map((obj) => obj);
  //   console.log(portfolio);
-  const totalLikes = portfolio.reduce((acc, curr) => {
-    return acc + curr.likes;
-  }, 0);
-  
+   const totalLikes = portfolio
+    .reduce((acc, curr) => {
+      return acc + curr.likes;
+    }, 0);
+  console.log(totalLikes);
   return { photographer, portfolio, totalLikes };
 }
+
 //profil medias
 function displayPhotographerInfo(photographer) {
   const { name, portrait, city, country, price, tagline } = photographer;
@@ -35,12 +39,12 @@ function displayPhotographerInfo(photographer) {
         <img src=${picture} alt="${name}" class="portraitMedia">
 `;
 }
-
+ 
 function displayMedia(portfolioArray, photographer) {
  // console.log(portfolioArray);
   const portfolioSection = document.querySelector(".portfolio-section");
   const lightboxSection = document.querySelector(".slider-media-container");
-  const ModalForm = document.querySelector(".modal");
+ formulaire();
   portfolioArray.forEach((portfolioItem) => {
     const mediaModel = mediaFactory(portfolioItem, photographer);
     const mediaCardDOM = mediaModel.getMediaCardDOM();

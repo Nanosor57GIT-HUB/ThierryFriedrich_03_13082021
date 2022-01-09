@@ -1,10 +1,5 @@
 
-function displayModal(photographersId) {
-  const photographers = photographersId.filter(
-    (photographers) => photographers.id == extractId
-  );
-  photographers.map((photographer) => {
-    
+function formulaire(name) {
 const ModalForm = document.querySelector(".modal");
     ModalForm.innerHTML = `
 <div class="windowContact">
@@ -15,7 +10,7 @@ const ModalForm = document.querySelector(".modal");
 
             <div class="photographersContactName">
               <p>Contactez-moi</p>
-              <h3>${photographer.name}</h3>
+              <h3>${name}</h3>
             </div>
 
             <form            
@@ -95,10 +90,10 @@ const ModalForm = document.querySelector(".modal");
           </div>
         </div>`;
         
-  });
+ 
   
   //Open modalFormulaire by button "Contactez-moi"
-  const Modal = document.querySelector("modal");
+  const Modal = document.querySelector(".modal");
   
   const Contactbtn = document.querySelector(".contact_button");
   Contactbtn.onclick = () => {

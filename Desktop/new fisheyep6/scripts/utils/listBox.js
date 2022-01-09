@@ -1,21 +1,4 @@
-/*async function getData(photographerId) {
-  const res = await fetch("data/FishEyeData.json", {
-    headers: {
-      Accept: "application/json",
-    },
-  });
-  const data = await res.json();
-  //console.log(data);
-  const photographer = data.photographers.find((p) => p.id === photographerId);
-  const portfolio = data.media
-    .filter((obj) => obj.photographerId === photographerId)
-    .map((obj) => obj);
-    console.log(portfolio);
-  const totalLikes = portfolio.reduce((acc, curr) => {
-    return acc + curr.likes;
-  }, 0);
-  return { photographer, portfolio, totalLikes };
-}*/
+
 
 
 /*basculer entre le masquage et l'affichage du contenu de la liste déroulante */
@@ -23,6 +6,7 @@ function myDropDown() {
   let dropdown = document.getElementById("myDropdown").classList.toggle("show");
   // Ferme la liste déroulante au click
   window.onclick = function (event) {
+   // console.log("ok");
     if (!event.target.matches(".dropbtn")) {
       let dropdowns = document.getElementsByClassName("dropdown-content");
       let i;
@@ -36,48 +20,7 @@ function myDropDown() {
   };
 }
 
-fetch("API/FishEyeData.json").then((response) =>
-  response.json().then(function (data) {
-    let photographers = data.photographers;
-    let medias = data.media;
-    displayListBox(medias, photographers);
-  })
-);
-
-function displayListBox(medias, photographers) {
-  let sortById = medias.filter((medias) => medias.photographerId == extractId);
-
-  let sortByDates = sortById.map((medias) => medias.date);
-  sortByDates.sort();
-
-  let sortByTitle = sortById.map((medias) => medias.title);
-  sortByTitle.sort();
-
-  // console.log(sortById);
-  // console.log(sortByDates);
-  //console.log(sortByTitle);
-
-  /*
-function displayPhotographerInfo(photographer) {
-  const { name, portrait, city, country, price, tagline } = photographer;
-  const picture = `assets/photographers/${portrait}`;
-  const header = document.querySelector(".photograph-header");
-  header.innerHTML = `
-        <div class="card2-bio">
-          <h2 class="photographer-name">${name}</h2>
-          <p class="location">${city}, ${country}</p>
-          <p class="tagline">${tagline}</p>
-        </div>
-        <button class="contact_button" onclick="displayModal()">
-          Contactez-moi
-        </button>
-        <img src=${picture} alt="${name}" class="portraitMedia">
-`;
-}
-*/
-
-
-  document.querySelector(".dropdown").innerHTML = `
+ document.querySelector(".dropdown").innerHTML = `
   <div class="containerListBox">
   <div class="sortList">
     <p class="trierTitle">Trier par</p>
@@ -93,12 +36,21 @@ function displayPhotographerInfo(photographer) {
   </div>
   `;
 
-function mediaFactory(data, photographer) {
-  const { id, date, image, likes, title, video } = data;
-const {name} = photographer;
+/*function displayListBox(data, photographers) {
+  let sortById = data.filter((data) => data.photographerId == extractId);
 
+  let sortByDates = sortById.map((data) => data.date);
+  sortByDates.sort();
 
+  let sortByTitle = sortById.map((data) => data.title);
+  sortByTitle.sort();
+}*/
 
+  // console.log(sortById);
+  // console.log(sortByDates);
+  //console.log(sortByTitle);
+
+ 
 
 
 
@@ -121,5 +73,5 @@ const {name} = photographer;
    DateslistBox.onclick = () => {
      BoxDisplays.sortByDates.sort();
    };*/
-}
+
   
