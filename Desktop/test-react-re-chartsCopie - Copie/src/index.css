@@ -1,0 +1,459 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/************************************************************************************/
+/**** page statistiques ***/
+.containerPage {
+  /* position: relative; */
+  width: 100%;
+  min-width: 1024px;
+   height: 100vh; 
+   /* min-height: 780px;  */ 
+}
+
+.navH {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: #000000;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16%;
+  height: 100%;
+}
+
+.logo {
+ /* width: 178px;
+  height: 61px; */
+  width: 70%;
+}
+
+.horizontalMenu {  
+  width: 75%;
+  height: 100%;
+  margin-left: 3%;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.btnNavBar {
+  width: auto;
+  height: 35px;
+  text-decoration: none;
+  font-size: 1.5rem;
+   color: #ffffff;
+   border: 3px solid #000000;
+}
+
+.btnNavBar:hover {
+  border-bottom: 3px solid #fbfbfb;
+  transition: border-bottom 0.8s;
+}
+
+
+.verticalMenu {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8%;
+ height: 115vh;
+  min-height: 780px; 
+  background-color: #000000;
+}
+
+.containerIcon {
+  display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 40%;
+   margin-top: 250px;
+}
+.navIco {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.icoBtn {
+padding: 3px;
+  cursor: pointer;
+  border: 2px solid #000000;
+}
+ .icoBtn:hover {
+  border-radius: 10px; 
+border: 2px solid red;
+/* box-shadow: 0px 0px 2px 1px red; */
+ /* transition: border 0.6s ease-in-out; */
+} 
+
+.copyright {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 12px;
+   width: 140px; 
+  height: 10%; 
+   transform: rotate(-90deg)  
+}
+
+/**************************************************************/
+/**** CONTAINER STATISTIQUES name/analyze ****/
+.userContainer {
+  display: flex;
+    flex-direction: column;  
+  position: absolute;
+  right: 3%;
+  left: 11%;
+  top: 15%;
+  bottom: 0;
+  width: auto;
+   height: 100vh; 
+}
+
+/**** CONTAINER NAME ****/
+.nameContainer {
+  width: 100%;
+  height: 20%;
+}
+.hello {
+  font-size: 48px;
+  margin: 0;
+}
+.firstName {
+  color: #ff0000;
+}
+.congratulation {
+  font-size: 18px;
+}
+.bravo {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+/**** CONTAINER TOTAL ANALYSE ****/
+
+/**** CONTAINER CHARTS ANALYZE .... ****/
+
+.statsContainer {
+  display: flex;
+  width: 100%;
+  height: 80%;
+}
+.chartsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+ 
+}  
+
+
+/*activity*/
+.container-activity {
+  position: relative;
+  /* display: flex; */
+  width: 95%;/*88%*/
+  height: 50%; 
+ 
+}
+.daily-activity {
+  width: 100%;/*88%*/
+  height: 100%;
+ background-color: #fbfbfb; 
+ 
+}
+.titleDailyActivity {
+  position: absolute;
+margin: 0;
+margin-left: 25px;
+margin-top: 15px;
+font-size: 15px;
+font-weight: bold;
+
+}
+
+/*sessions global*/
+.container-sessions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 95%;
+  height: 40%; 
+  
+}
+
+
+.spider-analytics,
+.objective-score,
+.average-duration {
+width: 30%;/*258*/
+height: 100%; /*263*/
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+border-radius: 5px;
+}
+.average-duration {
+  position: relative;
+  background-color: #ff0000; 
+}
+.average-duration-bgc {
+  position: absolute;
+ top: 0;
+ right: 0; 
+  width: 27%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0 5px 5px 0;
+}
+.titleSessionTime {
+ position: absolute;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 65%;
+  font-size: 15px;
+  color: #fff;
+  mix-blend-mode: normal;
+opacity: 0.5;
+}
+.spider-analytics {
+  background-color: #282D30;
+}
+.objective-score {
+  position: relative;
+  background-color: #fbfbfb;
+}
+.titleScore {
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  left: 20px;
+  font-weight: bold;
+}
+.tauxObjectif {
+  position: absolute;
+  margin: 0;
+  top: 35%;
+  left: 35%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #74798C;
+}
+
+/**** CONTAINER ENERGY ****/
+.container-energy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+ 
+}
+.calories,
+.proteines,
+.glucides,
+.lipides {
+  display: flex;
+width: 258px;
+height: 124px;
+background-color: #fbfbfb;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+border-radius: 5px;
+}
+.img-energy {
+  margin-left: 35px;
+}
+.infos-energy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 20px;
+}
+.number-energy {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.title-energy {
+  margin: 0;
+  font-size: 14px;
+  color: #74798C;
+}
+
+
+.error,
+.loading {
+  display: flex;
+ margin-right: 0;
+  width: 92%;
+  height: 100px;
+  margin-left: 8%;
+  align-items: center;
+ justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(178, 178, 224);
+}
+.error {
+ color: red;
+}
+
+
+/**** PAGE ACCUEIL POUR DEMO ****/
+.homePage {
+  height: 100vh;
+  background-color: #fbfbfb;
+}
+.homeNav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  top: 30px;
+  margin-left: 10%;
+}
+.titleDemo {
+   display: flex;
+   flex-direction: column;
+  width: 100%;
+  height: 40vh;
+align-items: center;
+justify-content: flex-end; 
+
+}
+.titleHome {
+ font-size: 2.8rem;
+ margin: 0;
+}
+.subTitleDemo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #74798C;
+}
+.logoIsolé {
+  height: 50vh;
+  display: flex;
+  align-items: center;justify-content: center;
+}
+.logoImg {
+  width: 300px;
+  border: 1px solid red;
+   border-radius: 50%; 
+   box-shadow: 1px 2px 4px 2px rgb(92, 76, 76);
+}
+.navId {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  height: auto;
+  
+}
+.userBtn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  color: #fbfbfb;
+  background-color: red;
+  padding: 0 8px;
+  border-radius: 25px;
+  box-shadow: 1px 2px 2px 1px black;
+}
+.userBtn:hover {
+  color: #74798C;
+}
+/******************************************************************************/
+
+ .recharts-cartesian-axis-line {
+  display: none;
+}
+.recharts-cartesian-axis-tick-line {
+  display: none;
+} 
+
+.custom-tooltip {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  height: 80px;
+  color: #fff;
+}
+.labelDailyActivity {
+background-color: rgb(230, 0, 0);
+margin: 0;
+height: 50%;
+text-align: center;
+margin-top: 20px;
+border-radius: 5px 5px 0 0;
+}
+.desc {
+  background-color: rgb(40, 45, 48);
+  margin: 0;
+  height: 50%;
+  text-align: center;
+  border-radius: 0 0 5px 5px ;
+  border-top: 1px solid #fff;
+}
+.labelSession {
+  background-color: #fff;
+  width: 80%;
+  color: #000000;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.recharts-wrapper .recharts-cartesian-grid-horizontal line:first-child {
+  stroke-Dasharray: 0
+}
+
+
+.recharts-wrapper .recharts-cartesian-grid-vertical line {
+      stroke-opacity: 0;
+}
+
+
+
