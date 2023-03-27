@@ -1,0 +1,110 @@
+/*ACCUEIL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+.bodyAccueil {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.containerBody {
+  display: flex;
+  flex-direction: column;
+   margin-top: 50px; 
+}
+
+.containerTitlePortfolio {
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: auto;
+  height: 130px;
+  margin: 0 auto;
+}
+
+.titlePortfolio {
+  width: 100%;
+  height: 90px;
+  font-size: 70px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 0.1vw aquamarine;
+}
+
+.notranslate {
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+  translate: no !important;
+}
+
+.responsiveText {
+  font-size: 14px;
+  color: aquamarine;
+  animation: textresponsive 3s;
+}
+@keyframes textresponsive {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.containerText {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin-top: 280px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 300px;
+}
+
+.presentation-text {
+  width: 60%;
+  height: auto;
+  padding: 40px;
+  color: aquamarine;
+  font-size: 18px;  
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  word-spacing: 1px;
+  line-height: 1.5em;
+  text-align: justify;
+   overflow: hidden;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto -moz-hyphens;
+}
+
+.portrait {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}

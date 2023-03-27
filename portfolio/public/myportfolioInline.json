@@ -1,0 +1,327 @@
+{
+  "pro": [
+    {
+      "id": "001",
+      "position": "01",
+      "title": "Reservia",
+      "description": "Transformez une maquette en site web avec HTML & CSS",
+      "details": "Intégration de l’interface du site avec du code HTML et du CSS. Mettre en place un CSS Responsive.",
+      "cover": "coverProjets/CoverReservia.webp",
+      "logo": "logoProjets/Reservia.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/ThierryFriedrich_02_07072021",
+          "demo": "https://nanosor57git-hub.github.io/ThierryFriedrich_02_07072021/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "002",
+      "position": "02",
+      "title": "ohmyfood",
+      "description": "Dynamisez une page web avec des animations CSS",
+      "details": "Développer un site First-Mobile proposant le menu de plusieurs restaurants parisiens. Permettre la réservation en ligne avec la composition de menus avec le respect de la charte graphique, en HTML, CSS, les animations et l’utilisation de SASS.",
+      "cover": "coverProjets/CoverOhmyfood.webp",
+      "logo": "logoProjets/Ohmyfood.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/ThierryFriedrich_03_13082021",
+          "demo": "https://nanosor57git-hub.github.io/ThierryFriedrich_03_13082021/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/sass.png",
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "003",
+      "position": "03",
+      "title": "GameOn",
+      "description": "Créez une landing page avec Javascript",
+      "details": "Prise de relais pour la complétion sur la partie Front-End pour le formulaire et de son responsive.",
+      "cover": "coverProjets/CoverGameOn.webp",
+      "logo": "logoProjets/GameOn.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/ThierryFriedrich_04_23092021",
+          "demo": "https://nanosor57git-hub.github.io/ThierryFriedrich_04_23092021/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/javascript.png",
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "004",
+      "position": "04",
+      "title": "FishEye",
+      "description": "Créez un site accessible pour une plateforme de photographes",
+      "details": "Création d’un prototype accessible en HTML, CSS et Javascript d’après des maquettes.",
+      "cover": "coverProjets/CoverFishEye.webp",
+      "logo": "logoProjets/FishEye.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/p6FishEye",
+          "demo": "https://nanosor57git-hub.github.io/p6FishEye/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "005",
+      "position": "05",
+      "title": "Les petits plats",
+      "description": "Développez un algorithme de recherche en JavaScript",
+      "details": "Faire la différence avec les autres sites en fluidifiant le moteur de recherche. Travailler dans un premier temps avec un JSON local avant l’arrivée de l’équipe Back-End. Implémenter la fonctionnalité de recherche.",
+      "cover": "coverProjets/CoverLes_petits_plats.webp",
+      "logo": "logoProjets/Les_petits_plats.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/07LesPetitsPlats",
+          "demo": "https://nanosor57git-hub.github.io/07LesPetitsPlats/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "006",
+      "position": "06",
+      "title": "Billed",
+      "description": "Débuggez et testez un SaaS RH",
+      "details": "Débugger la partie administrateur. Tester et débugger la partie employée.",
+      "cover": "coverProjets/CoverBilled.webp",
+      "logo": "logoProjets/Billed.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/P9-Debugg-Sass",
+          "demo": "https://p9-debugg-sass.vercel.app/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "007",
+      "position": "07",
+      "title": "Dev4U",
+      "description": "Définissez les besoins pour une app de soutien scolaire",
+      "details": "Définir les besoins du client en faisant les diagrammes de cas d’usage avec une connexion, un chat, un calendrier, un gestionnaire de tâches et un tableau de bord. Faire les user-Stories avec les critères d’acceptation pour chacune des fonctionnalités.",
+      "cover": "coverProjets/CoverLearn.webp",
+      "logo": "logoProjets/Dev4U.webp",
+      "url": [
+        {
+          "git_hub": "",
+          "demo": ""
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "008",
+      "position": "08",
+      "title": "Kasa",
+      "description": "Développez une application Web avec React et React Router",
+      "details": "Démarrer le projet en React et développer l’ensemble de l’application, des composants React et des routes React-Router en suivant les maquettes Figma (responsive !) et ce avec un code de qualité. Doit se faire sans librairie React externe.",
+      "cover": "coverProjets/CoverKasa.webp",
+      "logo": "logoProjets/Kasa.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/nanosor57git-hub.github.io",
+          "demo": "https://nanosor57git-hub.github.io/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/javascript.png",
+        "logoDeveloppeur/react.png",
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "009",
+      "position": "09",
+      "title": "SportSee",
+      "description": "Développez un tableau de bord d'analytics avec React",
+      "details": "Intégration de la page suivante selon maquette et Kanban (User-Stories) via un Sprint. Développement du profil en React. Ajout de graphiques avec Recharts. Travailler sur Desktop seulement (min. 1024px*780px lisibilité) avec Back-End pour les appels HTTP. Les appels doivent être effectués à l'extérieur des composants via un service. Création de la documentation (JsDoc, ReadMe) en anglais.",
+      "cover": "coverProjets/CoverSportsee.webp",
+      "logo": "logoProjets/SportSee.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/P12-sportsee",
+          "demo": "https://nanosor57git-hub.github.io/P12-sportsee/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/javascript.png",
+        "logoDeveloppeur/react.png",
+        "logoDeveloppeur/nodejs.png",
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "010",
+      "position": "10",
+      "title": "ArgentBank",
+      "description": "Utilisez une API pour un compte utilisateur bancaire avec React",
+      "details": "Authentification des utilisateurs avec la création d’une application Web permettant aux clients de se connecter, de gérer leurs comptes et profil. Transactions – Spécifier les EndPoints nécessaire pour une deuxième mission une fois la première terminée.",
+      "cover": "coverProjets/CoverArgentBank.webp",
+      "logo": "logoProjets/ArgentBank.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/P13_ArgentBank",
+          "demo": "https://p13-argent-bank.vercel.app/dashboard"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "011",
+      "position": "11",
+      "title": "Health Wealth",
+      "description": "Faites passer une librairie jQuery vers React",
+      "details": "Faire une nouvelle version des pages « Create Employee » et « Employee List » avec React. Convertir un des 4 plugins actuels en React et le publier sur NPM. Remplacer les 3 autres en important depuis des librairies existantes. Ajouter un système de gestion d’état.",
+      "cover": "coverProjets/CoverHealthWealth.webp",
+      "logo": "logoProjets/Wealth_Health.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/HRnet_P14_project",
+          "demo": "https://h-rnet-p14-project.vercel.app/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    }
+  ],
+
+  "perso": [
+    {
+      "id": "0001",
+      "position": "01",
+      "title": "Mon portfolio",
+      "description": "Création d'un portfolio",
+      "details": "Création d'un portfolio professionnel incluant les projets de formation et personnels.",
+      "cover": "coverProjets/CoverPortfolio.webp",
+      "logo": "logoProjets/MyPortfolioInline.webp",
+      "url": [
+        {
+          "git_hub": "",
+          "demo": ""
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "0002",
+      "position": "02",
+      "title": "GameOn",
+      "description": "A mettre en place",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "cover": "coverProjets/CoverBackgroundFreeProjets.webp",
+      "logo": "logoProjets/MyPortfolioInline.webp",
+      "url": [
+        {
+          "git_hub": "https://github.com/Nanosor57GIT-HUB/ThierryFriedrich_04_23092021",
+          "demo": ""
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/javascript.png",
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    },
+    {
+      "id": "0003",
+      "position": "03",
+      "title": "ohmyfood",
+      "description": "A mettre en place",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "cover": "coverProjets/CoverBackgroundFreeProjets.webp",
+      "logo": "logoProjets/MyPortfolioInline.webp",
+      "url": [
+        {
+          "git_hub": "",
+          "demo": "https://nanosor57git-hub.github.io/ThierryFriedrich_03_13082021/"
+        }
+      ],
+      "technologies": [
+        "logoDeveloppeur/sass.png",
+        "logoDeveloppeur/figma.png",
+        "logoDeveloppeur/html5.png",
+        "logoDeveloppeur/css3.png"
+      ]
+    }
+  ],
+
+  "skills": [
+    {
+      "hard_skills": [
+        "Configuration d'un poste de travail et mise en place de la technologie nécéssaire à la réalisation.",
+        "Création des diagrammes de cas d'usages.",
+        "Faire des User-Stories.",
+        "Création d'une maquette avec ses fonctionnalités sur Figma/AdobeXD et implémenter.",
+        "Faire un kanban sur Notion.",
+        "Travailler avec NodeJS.",
+        "Travailler avec des bibliothèques NPM.",
+        "Créer des sites web interactifs en HTML, CSS, Javascript et React.",
+        "Comprendre et corriger des bugs.",
+        "Récupérer des données back-end en local (express) et distant (MongoDB).",
+        "Faire une refonte de site web."
+      ]
+    },
+    {
+      "soft_skills": [
+        "Assidu",
+        "Curieux",
+        "Intuitif",
+        "Motivé",
+        "Adaptabilité pour apprendre de nouvelles technologies.",
+        "Résolution de problèmes et prise de décision autonome.",
+        "Autodidacte",
+        "Capacité à travailler dans un environnement en constante évolution.",
+        "Esprit critique et créatif pour proposer des améliorations."
+      ]
+    }
+  ]
+}

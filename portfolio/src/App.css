@@ -1,0 +1,119 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #2f3330;
+  
+  /* #303d33 */
+  /* #2d4734 */
+  /* #348a4b */
+  /* #2a8c44 */
+  /* background-color: #19632d; */
+  /* #2a8c44 */
+  /* background-color: #2b153a; */
+  /* 021b3d */
+ 
+}
+
+/* .app2 {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+} */
+
+
+
+.bg {
+  position: fixed;
+  min-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -10;
+}
+
+/*ERROR404*/
+.btn404 {
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+  margin-left: 10%;
+  text-decoration: none;
+  font-size: 24px;
+  color: #ffe062;
+  border-radius: 50%;
+  padding: 7px 16px;
+}
+.btn404:hover {
+  color: rgba(255, 224, 98, 0.7);
+  text-shadow: 1px 2px 5px rgba(6, 6, 38, 0.7);
+}
+.containerError404 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+}
+
+.title404 {
+  width: 100%;
+  height: 12vh;
+  line-height: 25vh;
+  font-size: 90px;
+  color: #060626;
+}
+
+.logoError404 {
+  width: 20%;
+}
+
+.text404 {
+  width: 100%;
+  height: 10vh;
+  font-size: 36px;
+  font-weight: bold;
+  color: aquamarine;
+}

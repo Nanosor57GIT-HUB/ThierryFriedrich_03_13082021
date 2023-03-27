@@ -1,0 +1,277 @@
+/*FORMULAIRE */
+.contact {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  margin-top: 200px;
+}
+
+.containerContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85vh;
+}
+
+.titleContact {
+  width: 100%;
+  font-size: 48px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-text-stroke: 0.1vw rgba(127, 255, 212, 0.8);
+}
+
+.block_form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  min-height: 500px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.07em;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(127, 255, 212, 0.1);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  border: 2px solid #fbd437;
+  border-radius: 10px;
+}
+
+.titleContactForm {
+  font-size: 34px;
+  color: aquamarine;
+}
+
+.containerInput {
+  width: 90%;
+  height: auto;
+  margin: 0;
+}
+
+::placeholder {
+  font-size: 14px;
+  color: rgb(77, 6, 6);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  opacity: 0.5;
+}
+
+input {
+  background-color: aquamarine;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.flex_input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+label {
+  color: aquamarine;
+  margin-bottom: 2px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.first_name,
+.last_name {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.user_email {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.textarea {
+  width: 90%;
+   font-family: 'Bad Script', cursive;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: justify;
+   overflow: hidden;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto -moz-hyphens;
+}
+
+.errors {
+  color: #fbd437;
+  font-size: 12px;
+  margin: 0;
+}
+
+.btn_contact {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 15px 35%;
+  border-radius: 10px;
+  background-color: rgba(255, 212, 55, 0.2);
+  color: aquamarine;
+  border: 1px solid #fbd437;
+  cursor: pointer;
+}
+
+.btn_contact:hover {
+  box-shadow: 0px 0px 2px 2px rgba(255, 212, 55, 0.5);
+}
+
+/*MODAL Confirm*/
+
+.container-modal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 86vh;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: opacity 0.2s, visibility 0.3s, transform 0.3s;
+  z-index: 200;
+}
+
+.container-modal.active {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 86vh;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  border: none;
+  z-index: 10;
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 38%;
+  min-width: 280px;
+  height: 70%;
+  min-height: 520px;
+  margin-top: 130px;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5);
+  background-color: rgb(55, 72, 65);
+  border-radius: 10px;
+  z-index: 110;
+}
+
+.internBorder {
+  position: absolute;
+  top: 3%;
+  width: 95%;
+  height: 94%;
+  border: 2px solid #fbd437;
+  border-radius: 10px;
+}
+
+.bgConfirm {
+  position: absolute;
+  width: 100%;
+  min-width: 280px;
+  height: 68%;
+  min-height: 498px;
+  border-radius: 10px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.ContainerCloseModal {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  top: 20px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  margin-right: 60px;
+  color: #fbd437;
+  font-size: 0.8rem;
+}
+
+.btnCloseModal {
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fbd437;
+  border: 2px solid rgba(255, 212, 55, 0.4);
+  border-radius: 50px;
+  padding: 0 7px;
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.btnCloseModal:hover {
+  box-shadow: 0px 0px 2px 2px rgba(255, 212, 55, 0.8);
+  opacity: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  width: 100%;
+  height: 80%;
+}
+
+.imgModal {
+  width: 40%;
+  height: auto;
+}
+
+.confirmText {
+  margin: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.08em;
+  color: aquamarine;
+}
